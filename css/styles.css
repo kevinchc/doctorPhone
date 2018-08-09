@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Zizou Slab-Bold_1;
+    src: url('../fonts/Zizou/Zizou Slab-Bold_1.otf');
+}
+/**---- Typografy ----**/
+@font-face {
+    font-family: Arcon Regular;
+    src: url('../fonts/Arcon/Arcon-Regular.otf');
+}
+@font-face {
+    font-family: Arcon Rounded;
+    src: url('../fonts/Arcon/Arcon-Rounded-Regular.otf');
+}
+h1,h2,h3,h4,h4 {
+    color: #3e5a72;
+    font-family: Zizou Slab-Bold_1
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+@media (min-width: 375px) and (max-width: 667px) {
+
+}
+@media (min-width: 200px) and (max-width: 375px) {
+
+}
+
+
+h1{
+	font-size: 5em;
+	margin:0;
+	padding:0;
+}
+.intro p{
+	color: #fff;
+}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+.section{
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	margin-right: 0px;
+	text-align:center;
+}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+}
+#header{
+	top:0px;
+}
+#footer{
+	bottom:0px;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu {
+	bottom: 80px;
+}
+#infoMenu li a {
+	color: #fff;
+	z-index: 999;
+}
+/**Web Menu**/
+.logo{
+    height: 80px;
+}
+.icon-clock{
+    vertical-align: center;
+}
+
+
+/** Bootstrap **/
+
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+
+
+/*---------------NAV WEB--------------*/
+.nav-web{
+    background-color: #08c7da;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.nav-web-logo{
+    padding-left: 79px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+}
+.nav-web-giff{
+    padding-top: 15px;
+}
+
+
+
+.nav-web-navigator {
+    padding-top: 30px;
+}
+.nav-web-navigator li{
+    display: inline;
+    padding-right: 60px;
+}
+.nav-web-navigator a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Arcon Regular";
+    text-transform: uppercase;
+}
+
+
+
+
+/** Problem **/
+.problem {
+}
+.problem-left{
+    position: relative;
+    width: 1120px;
+    height: 694px;
+    bottom: -20px;
+	text-align: start;
+    z-index: -1;
+}
+.problem-left img{
+    width: 97%;
+    height: auto;
+    margin-left: 15px;
+}
+.problem-right{
+    display: block;
+    position: absolute;
+    text-align: end;
+    width: 40%;
+    right: 0px;
+    padding-top: 5%;
+    z-index: 2;
+}
+
+.problem-button{
+	padding-top: 5%
+
+}
+.problem-button h3{
+	font-family: Arcon Regular
+}
+.problem-second{
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.problem-second-left{
+    position: relative;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 100px;
+}
+.problem-second-title{
+
+}
+
+.problem-second-title {
+    font-size: 80px;
+}
+.problem-second-title2{
+    font-size: 104px;
+}
+
+
+
+
+
+
+
+/** Function **/
+.function{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.function-left{
+	padding-top: 18%;
+}
+.function-right{
+	padding-top: 8%;
+}
+.function-right h1{
+	font-size: 79px
+}
+
+
+/** Start Now **/
+.request{
+    display: flex;
+    align-items: center;
+    padding-top: 7%;
+}
+.request-title{
+    text-align: center;
+}
+
+.input-form{
+    border-bottom: 1px solid #3e5a72;
+    padding-top: 3%;
+}
+.input-form-problem{
+    padding-top: 20px;
+    border-bottom: 1px solid #3e5a72;
+}
+.input-form-problem select{
+	width: auto;
+}
+.problem-phone{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+#name,#lastname,#country,#city,#address,#marca,#model,#problem,#dni,#phone,#email{
+    color: #00607c;
+    font-family: "Arcon Regular";
+    font-style: normal;
+    font-size: 24px
+}
+.btn-send {
+	padding-top: 25px;
+}
+.btn-send h3{
+    font-family: Arcon Regular
+}
+.form-control::placeholder{
+    font-family: Arcon Regular;
+    color: #00607c
+}
+.request button{
+	width: 200px
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .main-bottom {
+        display: none;
+    }
+    .btn-send{
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .main-bottom {
+        display: none;
+    }
+    .btn-send{
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (min-width: 200px) and (max-width: 481px) {
+    .request{
+        padding-top: 35%
+    }
+    .request h1{
+        font-size: 200%;
+    }
+    .main-bottom {
+        display: none;
+    }
+    .btn-send{
+        align-items: center;
+        text-align: center;
+    }
+    .request img{
+        display: none;
+    }
+    .input-form{
+        padding-top: 5px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .request select{
+        width: 125px;
+    }
+    .request textarea{
+        font-family: Arcon Regular;
+        color: #00607c;
+        padding-left: 10px
+    }
+    .input-form-problem{
+        border-bottom: 0px solid #3e5a72;
+        padding-left: 0px
+    }
+}
+
+select {
+    color: #3e5a72;
+    font-family: "Arcon Regular";
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    width: 150px;
+    text-align: left;
+    border: none;
+}
+textarea{
+    border: none;
+    color: #3e5a72
+}
+.request input{
+    border: none;
+    color: red;
+}
+
+
+/** Finish Start Now **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+	background-color: #08c7da;
+	border-radius: 30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px;
+	-webkit-border-radius: 30px 30px 30px 30px;
+	height: 70px
+}
+.btn h2{
+	color: white;
+    font-family: "Arcon Regular";
+    font-size: 25px;
+}
+
