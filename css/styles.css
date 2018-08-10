@@ -395,6 +395,13 @@ textarea{
     background: #08c7da;
 }
 
+.first{
+}
+.border-contact {
+    border-right: 1px solid #ffffff;
+    margin-top: 80px;
+    height: 100px;
+}
 
 
 
