@@ -2,6 +2,10 @@
     font-family: Zizou Slab-Bold_1;
     src: url('../fonts/Zizou/Zizou Slab-Bold_1.otf');
 }
+@font-face {
+    font-family: Zizou Slab-Regular;
+    src: url('../fonts/Zizou/Zizou Slab-Regular_2.otf');
+}
 /**---- Typografy ----**/
 @font-face {
     font-family: Arcon Regular;
@@ -101,18 +105,41 @@ h1,h2,h3,h4{
 
 
 /** Problem **/
+#slide1 {
+    background-image: url('../images/newVersion/BACKGROUND_slide1.png');
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#slide2 {
+    background-image: url('../images/newVersion/background_slide_2.png');
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#section1{
+    background-image: url('../images/newVersion/background-2.png');
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#section2{
+    background-image: url('../images/newVersion/background_3.png');
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
 .problem {
     position: relative;
-    background-image: image('../images/newVersion/background.png');
 }
 .problem-left{
     position: absolute;
-    left: 0;
-    top: -220px;
-    z-index: -1;
+    left: 15px;
+    top: -250px;
+    z-index: 2;
 }
 .problem-left img{
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 .problem-right{
@@ -151,11 +178,11 @@ h1,h2,h3,h4{
     text-align: right;
     position: absolute;
     right: 40px;
-    top: -225px;
-    z-index: -1;
+    top: -260px;
+    z-index: 2;
 }
 .problem-2-right img{
-    width: 77%;
+    width: 90%;
     height: auto;
 }
 
@@ -166,29 +193,53 @@ h1,h2,h3,h4{
 }
 .function-left-top{
     position: absolute;
-    left: 330px;
+    left: 450px;
     top: -80px;
 }
+.left-top-1{
+    position: absolute;
+    top: -50px;
+    right: 45%;
+}
+
 .function-left-bottom{
     position: absolute;
-    left: 280px;
+    left: 400px;
     top: 120px;
 }
+.left-top-2{
+    position: absolute;
+    top: -20px;
+    right: -10px;
+}
+
 .function-image-center{
     position: absolute;
-    top: -100px;
+    top: -200px;
     z-index: -1;
 }
 .function-right-top{
     position: absolute;
-    right: 460px;
+    right: 560px;
     top: -150px;
 }
+.left-top-3{
+    position: absolute;
+    top: -50px;
+    right: 25px;
+}
+
 .function-right-bottom{
     position: absolute;
-    right: 540px;
+    right: 630px;
     top: 160px;
 }
+.left-top-4{
+    position: absolute;
+    top: -40px;
+    right: -10px;
+}
+
 
 .function-image-center img{
     width: 80%;
@@ -196,7 +247,234 @@ h1,h2,h3,h4{
 .function img{
     width: 80%;
 }
+.function h5{
+    font-family: "Arcon Regular";
+    font-size: 10px;
+    color: #3e5a72;
+}
+.left-top-button{
+    position: absolute;
+    top: -40px;
+    left: -150px;
+}
+.left-top-button-mas{
+    position: absolute;
+    text-align: start;
+    top: 40px;
+    width: 400px;
+}
+.function h2{
+    font-size: 13px;
+    font-family: "Arcon Regular";
+}
 
+.left-bottom-button{
+    position: absolute;
+    top: 35px;
+    right: -70px;
+}
+.right-top-button{
+    position: absolute;
+    left: 25px;
+}
+.right-top-button-mas{
+    position: absolute;
+}
+
+.right-button-bottom{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+.right-button-bottom-mas{
+    position: absolute;
+    top: 40px;
+    width: 400px;
+}
+
+.left-bottom-button-mas{
+    position: absolute;
+    width: 400px;
+    top: 40px;
+}
+.function-title{
+    text-align: right;
+    position: absolute;
+    top: -200px;
+    right: 150px;
+}
+.function-title h1 {
+    font-size: 46px;
+}
+.function-title h2 {
+    font-size: 62px;
+}
+.function p{
+    font-family: "Zizou Slab-Regular";
+    font-size: 18px;
+    color: #3e5a72;
+}
+
+
+
+/** doctorPhone **/
+
+.doctorPhone{
+    position: relative;
+}
+.doctorPhone-image{
+    position: absolute;
+    top: -200px;
+    z-index: -1;
+}
+.doctorPhone-1{
+    position: absolute;
+    top: -185px;
+    left: 500px;
+}
+.doctorPhone-1 h1 {
+    font-family: "Arcon Regular";
+    font-size: 104px;
+    color: #5897FF;
+}
+.doctorPhone-1-content{
+    position: absolute;
+    top: -150px;
+    right: 375px;
+}
+.doctorPhone-1-content h2{
+    font-family: "Zizou Slab-Regular";
+    font-size: 27px;
+    color: #5897FF;
+    margin-bottom: 0px;
+}
+.doctorPhone-1-content h3{
+    font-family: "Zizou Slab-Regular";
+    color: #3e5a72;
+}
+.doctorPhone-2 {
+    position: absolute;
+    top: -60px;
+    left: 625px;
+}
+.doctorPhone-2 h1 {
+    font-family: "Arcon Regular";
+    font-size: 104px;
+    color: #5897FF;
+}
+.doctorPhone-2-content{
+    position: absolute;
+    top: -30px;
+    right: 300px;
+}
+.doctorPhone-2-content h2{
+    font-family: "Zizou Slab-Regular";
+    font-size: 27px;
+    color: #5897FF;
+    margin-bottom: 0px;
+}
+.doctorPhone-2-content h3, span{
+    font-family: "Zizou Slab-Regular";
+    color: #3e5a72;
+    margin-bottom: 0px;
+}
+
+.doctorPhone-3 {
+    position: absolute;
+    top: 70px;
+    right: 750px;
+}
+.doctorPhone-3 h1 {
+    font-family: "Arcon Regular";
+    font-size: 104px;
+    color: #5897FF;
+}
+.doctorPhone-3-content{
+    position: absolute;
+    top: 100px;
+    right: 275px;
+}
+.doctorPhone-3-content h2{
+    font-family: "Zizou Slab-Regular";
+    font-size: 27px;
+    color: #5897FF;
+    margin-bottom: 0px;
+}
+.doctorPhone-3-content h3, span{
+    font-family: "Zizou Slab-Regular";
+    color: #3e5a72;
+    margin-bottom: 0px;
+}
+
+.doctorPhone-4 {
+    position: absolute;
+    top: 180px;
+    right: 600px;
+}
+.doctorPhone-4 h1 {
+    font-family: "Arcon Regular";
+    font-size: 104px;
+    color: #5897FF;
+}
+.doctorPhone-4-content{
+    position: absolute;
+    top: 200px;
+    right: 150px;
+}
+.doctorPhone-4-content h2{
+    font-family: "Zizou Slab-Regular";
+    font-size: 27px;
+    color: #5897FF;
+    margin-bottom: 0px;
+}
+.doctorPhone-4-content h3, span{
+    font-family: "Zizou Slab-Regular";
+    color: #3e5a72;
+    margin-bottom: 0px;
+}
+.doctorPhone-title{
+    position: absolute;
+    right: 80px;
+    text-align: right;
+    top: -250px;
+}
+.doctorPhone-title h1{
+    font-size: 46px;
+    margin-right: 20px;
+    bottom: 0;
+}
+.doctorPhone-title h2{
+    font-size: 62px;
+    top: 0;
+}
+
+
+/** Contact **/
+.contact-info{
+    text-align: start;
+}
+.contact-info h1{
+    font-size: 25px;
+    font-family: "Arcon Regular";
+    color: #FFFFFF;
+}
+.contact-info h2{
+    font-size: 15px;
+    font-family: "Arcon Regular";
+    color: #FFFFFF;
+}
+.menu-contact-1{
+    text-align: left;
+    padding-left: 20%;
+}
+.menu-contact-2{
+    text-align: left;
+    padding-left: 20%;
+}
+.menu-contact-3{
+    text-align: left;
+    padding-left: 20%;
+}
 
 
 
@@ -281,35 +559,40 @@ h5{
     border-bottom: 1px solid #3e5a72;
     padding-top: 3%;
 }
+.input-select{
+    padding-top: 3%;
+}
 .input-form-problem{
     padding-top: 20px;
-    border-bottom: 1px solid #3e5a72;
 }
 .input-form-problem select{
 	width: auto;
+    font-weight: lighter;
 }
 .problem-phone{
 	padding-left: 0px;
 	margin-left: 0px;
 }
 #name,#lastname,#country,#city,#address,#marca,#model,#problem,#dni,#phone,#email{
-    color: #00607c;
-    font-family: "Arcon Regular";
-    font-style: normal;
-    font-size: 24px
+    color: #08c7da;
+    font-size: 24px;
+    font-weight: lighter;
 }
 .btn-send {
 	padding-top: 25px;
 }
 .btn-send h3{
-    font-family: Arcon Regular
 }
 .form-control::placeholder{
-    font-family: Arcon Regular;
-    color: #00607c
+    color: #08c7da;
 }
 .request button{
-	width: 200px
+	width: 200px;
+    color: #FFFFFF;
+}
+.request h3{
+    color: #FFFFFF;
+    font-family: "Arcon Regular";
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -356,7 +639,7 @@ h5{
         width: 125px;
     }
     .request textarea{
-        font-family: Arcon Regular;
+        font-family: "Arcon Regular";
         color: #00607c;
         padding-left: 10px
     }
@@ -368,7 +651,6 @@ h5{
 
 select {
     color: #3e5a72;
-    font-family: "Arcon Regular";
     padding-left: 10px;
     padding-top: 4px;
     padding-bottom: 8px;
@@ -391,31 +673,19 @@ textarea{
 
 /** Contact **/
 .contact-info{
-    height: 250px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background: #08c7da;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.menu-contact div {
+    padding-bottom: 2px;
+}
+.border-contact {
+    border-right: 1px solid #FFFFFF;
+    margin-top: 50px;
+    height: 80px;
+}
 
 
 
@@ -425,11 +695,34 @@ textarea{
     border-radius: 20px 20px 20px 20px;
     -moz-border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
-	height: 70px
+	height: 70px;
+    vertical-align: middle;
 }
 .btn h2{
 	color: white;
     font-family: "Arcon Regular";
     font-size: 25px;
 }
+.btn-details{
+    width: 92px;
+    height: 27px;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 1px solid #3e5a72;
+    background-color: transparent;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.contact-map{
+    padding-top: 90px;
+}
 
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+br {
+    margin: 0;
+}
