@@ -13,14 +13,15 @@
     <link rel="stylesheet" type="text/css" href="plugins/fullpage.css"/>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <title>Dr. Phone</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 <div class="container-fluid" id="header">
     <div class="row nav-web">
-        <div class="col-md-1 nav-web-logo">
+        <div class="col-md-1 col-1 nav-web-logo">
             <img src="images/newVersion/logo.png">
         </div>
-        <div class="col-md-3 nav-web-giff">
+        <div class="col-md-3 col-3 nav-web-giff">
             <img src="images/newVersion/BEEP%20HEADER.gif">
         </div>
         <div class="col-md-8 nav-web-navigator">
@@ -42,13 +43,16 @@
                 </li>
             </ul>
         </div>
+        <div class="col-1 nav-mobil">
+            <i class="fas fa-align-justify"></i>
+        </div>
     </div>
 </div>
 
 <div id="fullpage">
-    <div class="section " id="section0">
+    <div class="section" id="section0">
         <div class="container-fluid">
-            <div class="slide" id="slide1">
+            <div class="slide" data-anchor="slide1" id="slide1">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 problem">
@@ -65,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" id="slide2">
+            <div class="slide" data-anchor="slide2" id="slide2">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 problem-2">
@@ -88,7 +92,7 @@
     </div>
     <div class="section" id="section1">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row function1">
                 <div class="col-md-12 function">
                     <div class="function-left-top">
                         <div class="left-top-1">
@@ -101,10 +105,10 @@
                             <p>Servicio Motorizado<br>de recojo:</p>
                         </div>
                         <div class="left-top-button">
-                            <button class=" btn btn-details">
+                            <button class=" btn btn-details" id="div-1">
                                 <h5>VER DETALLES</h5>
                             </button>
-                            <div class="left-top-button-mas">
+                            <div class="left-top-button-mas" id="div-2">
                                 <h2>Nuestros agentes<br>motorizados se
                                     encargarán<br>de recoger y<br>entregar
                                     el equipo<br>en el lugar que te encuentres.</h2>
@@ -122,10 +126,10 @@
                             <p>Entrega:</p>
                         </div>
                         <div class="left-bottom-button">
-                            <button type="button" class="btn btn-details">
+                            <button type="button" class="btn btn-details" id="div-3">
                                 <h5>VER DETALLES</h5>
                             </button>
-                            <div class="left-bottom-button-mas">
+                            <div class="left-bottom-button-mas" id="div-4">
                                 <h2>
                                     El equipo ya reparado<br>
                                     será devuelto al usuario.<br>
@@ -150,11 +154,15 @@
                             <p>Diagnóstico<br>del equipo:</p>
                         </div>
                         <div class="right-top-button">
-                            <button type="button" class="btn btn-details">
+                            <button type="button" class="btn btn-details" id="div-5">
                                 <h5>VER DETALLES</h5>
                             </button>
-                            <div class="right-top-button-mas">
+                            <div class="right-top-button-mas" id="div-6">
                                 <h2>
+                                    Se realizará la evaluación<br>
+                                    visual del equipo. Detallando<br>
+                                    en la hoja de cargo las observaciones<br>
+                                    del celular al momento de la entrega.
                                 </h2>
                             </div>
                         </div>
@@ -170,10 +178,10 @@
                             <p>Internamiento:</p>
                         </div>
                         <div class="right-button-bottom">
-                            <button type="button" class="btn btn-details">
+                            <button type="button" class="btn btn-details" id="div-7">
                                 <h5>VER DETALLES</h5>
                             </button>
-                            <div class="right-button-bottom-mas">
+                            <div class="right-button-bottom-mas" id="div-8">
                                 <h2>
                                     Nuestros expertos revisarán el celular<br>
                                     y con ello se generará un diagnóstico<br>
@@ -186,6 +194,162 @@
                     <div class="function-title">
                         <h1>¿Cómo</h1>
                         <h2>FUNCIONA?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row function2">
+                <div class="col-12 function-mobil">
+                    <div class="row function-mobil-top">
+                        <div class="function-mobil-title">
+                            <h1>Como<br><span>FUNCIONA?</span></h1>
+                        </div>
+                        <div class="function-mobil-image">
+                            <img src="images/newVersion/chica.png">
+                        </div>
+                    </div>
+                    <div class="row function-mobil-bottom">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-10">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-center">
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-left" href="#carouselExampleControls" role="button"
+                                                   data-slide="prev">
+                                                </i>
+                                            </div>
+                                            <div class="col-3 icon-page">
+                                                <img src="images/newVersion/Group%2083.png">
+                                            </div>
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-right" href="#carouselExampleControls" role="button"
+                                                   data-slide="next">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center image-center1">
+                                            <img src="images/newVersion/1.png">
+                                        </div>
+                                        <div class="row justify-content-center title-mobil">
+                                            <h2>SERVICIO MOTORIZADO<br>DE RECOJO</h2>
+                                        </div>
+                                        <div class="row justify-content-center subtitle-mobil">
+                                            <h3>
+                                                Nuestros agentes<br>
+                                                motorizados se encargaran<br>
+                                                de recoger y entregar<br>
+                                                el equipo en el lugar<br>
+                                                en que te encuentres.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-left" href="#carouselExampleControls" role="button"
+                                                   data-slide="prev">
+                                                </i>
+                                            </div>
+                                            <div class="col-3 icon-page">
+                                                <img src="images/newVersion/Group%2084.png">
+                                            </div>
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-right" href="#carouselExampleControls" role="button"
+                                                   data-slide="next">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center image-center1">
+                                            <img src="images/newVersion/1.png">
+                                        </div>
+                                        <div class="row justify-content-center title-mobil">
+                                            <h2>DIAGNOSTICO DEL<br>EQUIPO</h2>
+                                        </div>
+                                        <div class="row justify-content-center subtitle-mobil">
+                                            <h3>
+                                                Se realizará la<br>
+                                                evaluación visual del equipo.<br>
+                                                Detallando en la hoja<br>
+                                                de cargo las observaciones<br>
+                                                del celular<br>
+                                                al momento de la entrega.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-left" href="#carouselExampleControls" role="button"
+                                                   data-slide="prev">
+                                                </i>
+                                            </div>
+                                            <div class="col-3 icon-page">
+                                                <img src="images/newVersion/Group%2085.png">
+                                            </div>
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-right" href="#carouselExampleControls" role="button"
+                                                   data-slide="next">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center image-center1">
+                                            <img src="images/newVersion/1.png">
+                                        </div>
+                                        <div class="row justify-content-center title-mobil">
+                                            <h2>INTERNAMIENTO</h2>
+                                        </div>
+                                        <div class="row justify-content-center subtitle-mobil">
+                                            <h3>
+                                                Nuestros expertos<br>
+                                                revisarán el celular<br>
+                                                y con ello se generará<br>
+                                                un diagnóstico<br>
+                                                para luego proceder con<br>
+                                                la reparación necesaria.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-left" href="#carouselExampleControls" role="button"
+                                                   data-slide="prev">
+                                                </i>
+                                            </div>
+                                            <div class="col-3 icon-page">
+                                                <img src="images/newVersion/Group%2086.png">
+                                            </div>
+                                            <div class="col-1">
+                                                <i class="fas fa-angle-right" href="#carouselExampleControls" role="button"
+                                                   data-slide="next">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center image-center1">
+                                            <img src="images/newVersion/1.png">
+                                        </div>
+                                        <div class="row justify-content-center title-mobil">
+                                            <h2>ENTREGA</h2>
+                                        </div>
+                                        <div class="row justify-content-center subtitle-mobil">
+                                            <h3>
+                                                El equipo ya reparado<br>
+                                                será devuelto al usuario.<br>
+                                                Acto seguido<br>
+                                                se realizará<br>
+                                                el pago contra entrega<br>
+                                                por los servicios prestados.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,8 +395,7 @@
                         <h3>ya no tendrás que ir a ningún lugar.</h3>
                     </div>
                     <div class="doctorPhone-title">
-                        <h1>PORQUE ELEGIR</h1>
-                        <h2>Dr PHONE?</h2>
+                        <h1>Porque<br><span>ELEGIRNOS?</span></h1>
                     </div>
                 </div>
             </div>
@@ -277,7 +440,7 @@
                                                 <img src="images/icono_map.png">
                                                 <div class="col-md-8">
                                                     <div>
-                                                        <select class="input100" id="country"
+                                                        <select id="country"
                                                                 required>
                                                             <option value="Distrito*">Provincia*
                                                             </option>
@@ -291,11 +454,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="offset-md-2 col-md-5 offset-sm-2 col-sm-5 offset-2 col-5 input-select">
+                                        <div class="offset-md-2 col-md-5 offset-sm-2 col-sm-5 offset-1 col-5 input-select">
                                             <div class="row">
-                                                <img src="images/icono_map.png">
-                                                <div class="col-md-8">
-                                                    <select class="input100" id="city"
+                                                <img src="images/icono_map.png" id="icon-dist">
+                                                <div class="col-md-8 col-8 city">
+                                                    <select id="city"
                                                             required>
                                                     </select>
                                                 </div>
@@ -322,7 +485,7 @@
                                                 <img src="images/icono_celu.png">
                                                 <div class="col-md-8"
                                                      data-validate="Selecciona una marca">
-                                                    <select class="input100" id="marca" required>
+                                                    <select id="marca" required>
                                                         <option value="Modelo*">Marca*
                                                         </option>
                                                         <option value="Iphone">Iphone
@@ -340,27 +503,26 @@
                                                         </option>
                                                         <option value="HTC">HTC</option>
                                                         <option value="ZTE">ZTE</option>
-                                                        <span class="focus-input100"></span>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="offset-md-2 col-md-5 offset-sm-2 col-sm-5 offset-2 col-5 input-select">
+                                        <div class="offset-md-2 col-md-5 offset-sm-2 col-sm-5 offset-1 col-5 input-select">
                                             <div class="row">
-                                                <img src="images/icono_celu.png">
-                                                <div class="col-md-8">
-                                                    <select class="input100" id="model"
+                                                <img src="images/icono_celu.png" id="icon-cell">
+                                                <div class="col-md-8 col-8 city">
+                                                    <select id="model"
                                                             required>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-12">
-                                                        <textarea rows="1"
-                                                                  placeholder="Escribe tu Modelo"
-                                                                  class="input100 input-form" id="otherModels"
-                                                                  required>
-                                                        </textarea>
+                                                <div class="col-md-12 text-area">
+                                                    <textarea rows="1"
+                                                              placeholder="Escribe tu Modelo"
+                                                              id="otherModels"
+                                                              required>
+                                                    </textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -368,7 +530,7 @@
                                 </div>
                                 <div class="offset-md-2 col-md-4 offset-sm-1 col-sm-10 offset-1 col-10 input-form-problem">
                                     <div class="row">
-                                        <img src="images/icono_celu2.png">
+                                        <img src="images/icono_celu2.png" id="icon-cell2">
                                         <div class="col-md-6 col-10">
                                             <div class="problem-phone">
                                                 <select id="problem"
@@ -391,8 +553,8 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-10 col-1 col-10">
-                                                <textarea id="otherProblem" class="input100 input-form"
+                                        <div class="col-md-10 col-1 col-12 text-area2">
+                                                <textarea id="otherProblem"
                                                           rows="1"
                                                           name="otherProblem"
                                                           placeholder="Escribe un problema">
@@ -450,146 +612,147 @@
     </div>
     <div class="section" id="section4">
         <div class="container-fluid">
-        <div class="container-fluid">
-            <div class="row contact-map">
-                <div id="map"></div>
-            </div>
-            <div class="row contact-info">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-10 menu-contact">
+            <div class="container-fluid">
+                <div class="row contact-map">
+                    <div id="map"></div>
+                </div>
+                <div class="row contact-info">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 menu-contact">
 
-                        </div>
-                        <div class="col-md-1 border-contact">
+                            </div>
+                            <div class="col-md-1 border-contact">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-10 menu-contact-1">
-                            <div class="row justify-content-center">
-                                <div class="col-md-12" style="margin-bottom: 5px">
-                                    <h1>Síguenos</h1>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 menu-contact-1">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12" style="margin-bottom: 5px">
+                                        <h1>Síguenos</h1>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                        <img src="images/newVersion/facebook.png">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Facebook</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                        <img src="images/newVersion/twitter.png">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Twitter</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                        <img src="images/newVersion/instagram.png">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Instagram</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                        <img src="images/newVersion/whattsap.png">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Whatsapp</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                        <img src="images/newVersion/call.png">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Call-Center</h2>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                    <img src="images/newVersion/facebook.png">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Facebook</h2>
-                                </div>
+                            <div class="col-md-1 border-contact">
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                    <img src="images/newVersion/twitter.png">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Twitter</h2>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                    <img src="images/newVersion/instagram.png">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Instagram</h2>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                    <img src="images/newVersion/whattsap.png">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Whatsapp</h2>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                    <img src="images/newVersion/call.png">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Call-Center</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 border-contact">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-10 menu-contact-2">
-                            <div class="row justify-content-center">
-                                <div class="col-md-12" style="margin-bottom: 5px">
-                                    <h1>Contáctanos</h1>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 menu-contact-2">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12" style="margin-bottom: 5px">
+                                        <h1>Contáctanos</h1>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        <h2>DIRECCION:</h2>
+                                    </div>
+                                    <div class="col-md-12" style="padding-left: 30px">
+                                        <h2>Av Circunvalación 2684<br>San Borja 15021</h2>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h2>TELEFONO:</h2>
+                                    </div>
+                                    <div class="col-md-12" style="padding-left: 30px">
+                                        <h2>942-485-407</h2>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-12">
-                                    <h2>DIRECCION:</h2>
-                                </div>
-                                <div class="col-md-12" style="padding-left: 30px">
-                                    <h2>Av Circunvalación 2684<br>San Borja 15021</h2>
-                                </div>
-                                <div class="col-md-12">
-                                    <h2>TELEFONO:</h2>
-                                </div>
-                                <div class="col-md-12" style="padding-left: 30px">
-                                    <h2>942-485-407</h2>
-                                </div>
+                            <div class="col-md-1 border-contact">
                             </div>
-                        </div>
-                        <div class="col-md-1 border-contact">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-10 menu-contact-3">
-                            <div class="row justify-content-center" style="margin-left: 20px">
-                                <div class="col-md-12" style="margin-bottom: 5px;">
-                                    <h1>Idiomas</h1>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 menu-contact-3">
+                                <div class="row justify-content-center" style="margin-left: 20px">
+                                    <div class="col-md-12" style="margin-bottom: 5px;">
+                                        <h1>Idiomas</h1>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Español</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Ingles</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Francés</h2>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h2>Portugués</h2>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Español</h2>
-                                </div>
+                            <div class="col-md-1 border-contact">
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Ingles</h2>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Francés</h2>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-10">
-                                    <h2>Portugués</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 border-contact">
                         </div>
                     </div>
                 </div>
@@ -615,15 +778,10 @@
 <script type="text/javascript" src="plugins/fullpage.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['solution', 'function', 'more-function', 'election', 'start-now', 'contact'],
+        anchors: ['solution', 'function','election', 'start-now', 'contact'],
         sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
         css3: true,
-        loopBottom: true,
-        afterRender: function () {
-            setInterval(function () {
-                fullpage.moveSlideRight();
-            }, 100);
-        }
+        slidesNavigation: true,
     });
 </script>
 

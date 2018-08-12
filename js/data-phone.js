@@ -6,12 +6,40 @@ $(document).ready(function() {
     $('.ocultar').hide();
     $('#animacionLoad').hide();
     $('#city').hide();
-    $("#eventConfirm").hide()
+    $("#eventConfirm").hide();
 });
+
+$("#div-1").click (function(){
+    $('#div-2').toggle('slow');
+    $('#div-4').hide(300);
+    $('#div-6').hide(300);
+    $('#div-8').hide(300);
+});
+$("#div-3").click (function(){
+    $('#div-4').toggle('slow');
+    $('#div-2').hide(300);
+    $('#div-6').hide(300);
+    $('#div-8').hide(300);
+});
+$("#div-5").click (function(){
+    $('#div-6').toggle('slow');
+    $('#div-2').hide(300);
+    $('#div-4').hide(300);
+    $('#div-8').hide(300);
+});
+$("#div-7").click (function(){
+    $('#div-8').toggle('slow');
+    $('#div-2').hide(300);
+    $('#div-4').hide(300);
+    $('#div-6').hide(300);
+});
+
+
+
 
 $(".dropdown-item").click(function(){
     $("dropdown").hide()
-})
+});
 
 var marcas = [];
 marcas['Iphone'] = ['Modelo*','IPhone 5', 'IPhone 5s','IPhone 5c' , 'IPhone 6', 'IPhone 6s','IPhone 6 plus' , 'IPhone 6s plus' , 'IPhone 7' , 'IPhone 7 plus' , 'IPhone 8' , 'IPhone 8 plus' , 'IPhone X','Otro'];
@@ -42,9 +70,11 @@ $('#country').on('change',function () {
             $('#city').append("<option values='"+element+"'>"+element+"</option>")
         });
         $('#city').show(300);
+        $("#icon-dist").show(300);
     }else {
         $("#city").empty();
         $("#city").hide(300);
+        $("#icon-dist").hide();
     }
 })
 
@@ -57,15 +87,19 @@ $('#marca').on('change', function() {
      marcas[""+ valor+""].forEach(function (element) {
          $('#model').append("<option values='"+element+"'>"+element+"</option>")
      });
+     $("#icon-cell").show(300);
      $('#model').show(300);
      $(".ocultar").show(300);
      $('#problem').show(300);
+     $("#icon-cell2").show(300);
   }else {
       $("#model").empty();
       $("#model").hide(300);
       $("#problem").hide(300);
+      $("#otherProblem").hide();
       $("#otherModels").hide(300);
-
+      $("#icon-cell").hide();
+      $("#icon-cell2").hide();
   }
 });
 
