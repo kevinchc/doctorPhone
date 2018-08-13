@@ -131,7 +131,7 @@ h1,h2,h3,h4{
     .nav-mobil{
         display: block;
         position: absolute;
-        right: 50px;
+        right: 20px;
         top: 20px;
     }
     .nav-mobil i{
@@ -141,10 +141,45 @@ h1,h2,h3,h4{
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-
+    .nav-web-navigator{
+        display: none;
+    }
+    .nav-mobil{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .nav-mobil i{
+        font-size: 50px;
+        color: #FFFFFF;
+    }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-
+    .nav-web-navigator{
+        display: none;
+    }
+    .nav-web-logo{
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 13px;
+    }
+    .nav-web-logo img{
+        width: 18px;
+    }
+    .nav-web-giff{
+        display: none;
+    }
+    .nav-mobil{
+        display: block;
+        position: absolute;
+        right: 38px;
+        top: 20px;
+    }
+    .nav-mobil i{
+        font-size: 25px;
+        color: #FFFFFF;
+    }
 }
 
 
@@ -768,9 +803,10 @@ h1,h2,h3,h4{
     color: #5897FF;
     margin-bottom: 0px;
 }
-.doctorPhone-1-content h3{
+.doctorPhone-1-content h3, span{
     font-family: "Zizou Slab-Regular";
     color: #3e5a72;
+    font-size: 27px;
 }
 .doctorPhone-2 {
     position: absolute;
@@ -796,6 +832,7 @@ h1,h2,h3,h4{
 .doctorPhone-2-content h3, span{
     font-family: "Zizou Slab-Regular";
     color: #3e5a72;
+    font-size: 27px;
     margin-bottom: 0px;
 }
 
@@ -812,7 +849,7 @@ h1,h2,h3,h4{
 .doctorPhone-3-content{
     position: absolute;
     top: 100px;
-    right: 275px;
+    right: 252px;
 }
 .doctorPhone-3-content h2{
     font-family: "Zizou Slab-Regular";
@@ -822,6 +859,7 @@ h1,h2,h3,h4{
 }
 .doctorPhone-3-content h3, span{
     font-family: "Zizou Slab-Regular";
+    font-size: 27px;
     color: #3e5a72;
     margin-bottom: 0px;
 }
@@ -850,6 +888,7 @@ h1,h2,h3,h4{
 .doctorPhone-4-content h3, span{
     font-family: "Zizou Slab-Regular";
     color: #3e5a72;
+    font-size: 27px;
     margin-bottom: 0px;
 }
 .doctorPhone-title{

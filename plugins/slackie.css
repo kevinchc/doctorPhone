@@ -3,6 +3,23 @@ Slackie Version 1.0 Beta
 Made avalible under the MIT License 
 Created by Niels Klom
 */
+@font-face {
+  font-family: Zizou Slab-Bold_1;
+  src: url('../fonts/Zizou/Zizou Slab-Bold_1.otf');
+}
+@font-face {
+  font-family: Zizou Slab-Regular;
+  src: url('../fonts/Zizou/Zizou Slab-Regular_2.otf');
+}
+/**---- Typografy ----**/
+@font-face {
+  font-family: Arcon Regular;
+  src: url('../fonts/Arcon/Arcon-Regular.otf');
+}
+@font-face {
+  font-family: Arcon Rounded;
+  src: url('../fonts/Arcon/Arcon-Rounded-Regular.otf');
+}
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900italic,900);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -224,7 +241,7 @@ nav.desktop-slackie {
 
 nav.mobile-slackie {
   display: none;
-  background: #FF7518;
+  background: #0d9eac;
   position: fixed;
   opacity: 1;
   top: 0;
@@ -263,9 +280,23 @@ nav.mobile-slackie {
             animation: close;
     -webkit-animation-duration: 1s;
             animation-duration: 1s; }
+  nav.mobile-slackie li{
+    background-color: #058692;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  nav.mobile-slackie li {
+    margin: 0;
+    background-color: transparent;
+    height: auto;
+  }
+
+  .social-network li a{
+    line-height: 0px;
+  }
   nav.mobile-slackie ul {
     list-style-type: none;
-    margin: 5pc 0 0 45px;
+    margin: 5pc 0 0 0;
     padding: 0;
     letter-spacing: 0.5px; }
     nav.mobile-slackie ul li:nth-of-type(2) a {
@@ -281,8 +312,9 @@ nav.mobile-slackie {
       -webkit-animation-delay: -0.2s;
               animation-delay: -0.2s; }
     nav.mobile-slackie ul li a {
-      font-size: 36px !important;
-      line-height: 70px;
+      font-size: 20px !important;
+      font-family: "Arcon Regular";
+      line-height: 50px;
       color: #fafafa;
       -webkit-animation: mobilein;
               animation: mobilein;
@@ -308,10 +340,11 @@ nav.mobile-slackie {
     bottom: 0;
     left: 0;
     text-align: center;
-    background: #e45c00;
-    color: #fafafa;
+    background: #FFFFFF;
+    color: #0d9eac;
     font-weight: 900;
     font-size: 22px;
+    font-family: "Arcon Regular";
     line-height: 75px;
     letter-spacing: 0; }
     nav.mobile-slackie .slackie-action-btn i {
