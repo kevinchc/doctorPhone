@@ -83,9 +83,6 @@ h1,h2,h3,h4{
 .nav-web-giff{
     padding-top: 15px;
 }
-
-
-
 .nav-web-navigator {
     padding-top: 30px;
 }
@@ -104,107 +101,52 @@ h1,h2,h3,h4{
     display: none;
 }
 
-@media (min-width: 1130px) and (max-width: 1320px){
- .nav-web-navigator li {
-     padding-right: 20px;
- }
-}
-@media (min-width: 800px) and (max-width: 1130px){
-    .nav-web-navigator{
-        display: none;
-    }
-    .nav-mobil{
-        display: block;
-        position: relative;
-        padding-top: 15px;
-        font-size: 50px;
-        margin-left: 55%;
-    }
-}
-@media (min-width: 779px) and (max-width: 800px) {
-    .nav-web-navigator{
-        display: none;
-    }
-    .nav-mobil{
-        display: block;
-        position: relative;
-        padding-top: 15px;
-        font-size: 50px;
-        margin-left: 50%;
-    }
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-}
-@media (min-width: 634px) and (max-width: 779px) {
-    .nav-web-navigator{
-        display: none;
-    }
-    .nav-web-giff{
-        display: none;
-    }
-    .nav-mobil{
-        display: block;
-        position: relative;
-        padding-top: 15px;
-        font-size: 50px;
-        margin-left: 75%;
-    }
-
-}
-@media (min-width: 510px) and (max-width: 634px) {
-    .nav-web-navigator{
-        display: none;
-    }
-    .nav-web-giff{
-        display: none;
-    }
-    .nav-mobil{
-        display: block;
-        padding-top: 15px;
-        font-size: 50px;
-        margin-left: 70%;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 510px) {
-    .nav-web-navigator{
-        display: none;
-    }
-    .nav-web-giff{
-        display: none;
-    }
-    .nav-mobil{
-        display: block;
-        padding-top: 15px;
-        font-size: 50px;
-        margin-left: 65%;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .nav-web{
-        position: relative;
-    }
-    .nav-web-logo{
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 10%;
-    }
-    .nav-web-logo img{
-        width: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .nav-web-navigator, .nav-web-giff{
-        display: none;
-    }
-    .nav-mobil{
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .nav-web-navigator {
+        display: inline-block;
         position: absolute;
-        right: 30px;
-        margin-top: 11px;
-        font-size: 25px;
+        right: 0;
     }
+    .nav-web-navigator li{
+        display: inline-block;
+        padding-right: 20px;
+    }
+    .nav-web-navigator ul{
+        display: table-footer-group;
+    }
+    .nav-web-giff{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-web-navigator{
+        display: none;
+    }
+    .nav-mobil{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+    .nav-mobil i{
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
 
 }
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
 
 /** Problem **/
 #slide1 {
@@ -498,6 +440,216 @@ h1,h2,h3,h4{
     margin-top: 5px;
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .function-title{
+        top: -270px;
+        right: 86px;
+    }
+    .function-left-top{
+        left: 200px;
+        top: -81px;
+    }
+    #div-8{
+        width: 138px;
+    }
+    .function-left-bottom{
+        top: 160px;
+        left: 245px;
+    }
+    .function-right-top{
+        right: 314px;
+        top: -168px;
+    }
+    .function-title h2{
+        font-size: 41px;
+        font-weight: bold;
+    }
+    .function-right-bottom{
+        right: 400px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /**function mobil*/
+    .carousel-item{
+        vertical-align: top;
+    }
+    .function1, .function{
+        display: none;
+    }
+    .function2{
+        display: block;
+    }
+    .icon-page{
+        text-align: center;
+    }
+    .function-mobil img {
+        width: 50%;
+    }
+    .title-mobil, .subtitle-mobil{
+        text-align: center;
+    }
+    .function-mobil h1{
+        font-size: 51px;
+        font-family: "Zizou Slab-Bold_1";
+        font-weight: bold;
+    }
+    .function-mobil h2{
+        padding-top: 15px;
+        font-size: 25px;
+        font-family: "Arcon Regular";
+        font-weight: bold;
+    }
+    .function-mobil h3{
+        font-size: 20px;
+        font-family: "Arcon Regular";
+    }
+    .function-mobil span{
+        font-size: 55px;
+        font-family: "Zizou Slab-Bold_1";
+    }
+    .function-mobil-top{
+        position: relative;
+    }
+    .function-mobil-title{
+        position: absolute;
+        right: 354px;
+        top: 153px;
+    }
+    .function-mobil-image{
+        position: absolute;
+        right: -66px;
+        top: 121px;
+    }
+    .function-mobil-image img{
+        width: 50%;
+    }
+    .icon-page img{
+        width: 61%;
+    }
+    i{
+        font-size: 50px;
+    }
+    .image-center{
+        margin-top: 10px;
+    }
+    .image-center1 img{
+        width: 49%;
+        height: 20%;
+        margin-top: 20px;
+    }
+    .image-center2 img{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+
+    }
+    .image-center3 img{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+
+    }
+    .image-center4 img{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+    }
+    .function-mobil-bottom{
+        margin-top: 20%;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    /**function mobil*/
+    .carousel-item{
+        vertical-align: top;
+    }
+    .function1, .function{
+        display: none;
+    }
+    .function2{
+        display: block;
+    }
+    .icon-page{
+        text-align: center;
+    }
+    .function-mobil img {
+        width: 50%;
+    }
+    .title-mobil, .subtitle-mobil{
+        text-align: center;
+    }
+    .function-mobil h1{
+        font-size: 36px;
+        font-family: "Zizou Slab-Bold_1";
+        font-weight: bold;
+    }
+    .function-mobil h2{
+        padding-top: 15px;
+        font-size: 20px;
+        font-family: "Arcon Regular";
+        font-weight: bold;
+    }
+    .function-mobil h3{
+        font-size: 16px;
+        font-family: "Arcon Regular";
+    }
+    .function-mobil span{
+        font-size: 40px;
+        font-family: "Zizou Slab-Bold_1";
+    }
+    .function-mobil-top{
+        position: relative;
+    }
+    .function-mobil-title{
+        position: absolute;
+        right: 227px;
+        top: 134px;
+    }
+    .function-mobil-image{
+        position: absolute;
+        width: 60%;
+        right: -140px;
+        top: 121px;
+    }
+    .icon-page img{
+        width: 61%;
+    }
+    i{
+        font-size: 50px;
+    }
+    .image-center{
+        margin-top: 10px;
+    }
+    .image-center1 img{
+        width: 59%;
+        height: 20%;
+        margin-top: 20px;
+    }
+    .image-center2 img{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+
+    }
+    .image-center3 img{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+
+    }
+    .image-center4 img{
+        width: 30%;
+        height: 30%;
+        margin-top: 20px;
+    }
+    .function-mobil-bottom{
+        margin-top: 25%;
+    }
+
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     /**function mobil*/
     .carousel-item{
@@ -581,6 +733,9 @@ h1,h2,h3,h4{
     }
 
 }
+
+
+
 
 
 /** doctorPhone **/
@@ -712,6 +867,582 @@ h1,h2,h3,h4{
     font-size: 62px;
     top: 0;
 }
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .doctorPhone-image{
+        position: absolute;
+        top: -158px;
+        left: 0;
+    }
+    .doctorPhone-image img{
+        width: 900px;
+    }
+    .doctorPhone-1{
+        position: absolute;
+        top: -267px;
+        right: 718px;
+    }
+    .doctorPhone-1 h1 {
+        font-family: "Arcon Regular";
+        font-size: 104px;
+        color: #5897FF;
+    }
+
+    .doctorPhone-1-content{
+        position: absolute;
+        top: -249px;
+        right: 147px;
+    }
+    .doctorPhone-1-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 25px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-1-content h3{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        font-size: 25px;
+    }
+    .doctorPhone-2 {
+        position: absolute;
+        top: -135px;
+        right: 560px;
+    }
+    .doctorPhone-2 br{
+        display: none;
+    }
+    .doctorPhone-2 h1 {
+        font-family: "Arcon Regular";
+        font-size: 104px;
+        color: #5897FF;
+    }
+    .doctorPhone-2-content{
+        position: absolute;
+        top: -116px;
+        right: 57px;
+    }
+    .doctorPhone-2-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 25px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-2-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+
+    .doctorPhone-3 {
+        position: absolute;
+        top: -14px;
+        right: 445px;
+    }
+    .doctorPhone-3 br{
+        display: none;
+    }
+    .doctorPhone-3 h1 {
+        font-family: "Arcon Regular";
+        font-size: 100px;
+        color: #5897FF;
+    }
+    .doctorPhone-3-content{
+        position: absolute;
+        top: 6px;
+        right: 106px;
+        width: 314px;
+    }
+    .doctorPhone-3-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 25px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-3-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+
+    .doctorPhone-4 {
+        position: absolute;
+        top: 114px;
+        right: 290px;
+    }
+    .doctorPhone-4 h1 {
+        font-family: "Arcon Regular";
+        font-size: 104px;
+        color: #5897FF;
+    }
+    .doctorPhone-4-content{
+        position: absolute;
+        top: 140px;
+        right: 17px;
+        width: 252px;
+    }
+    .doctorPhone-4-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 25px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-4-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    .doctorPhone-title{
+        position: absolute;
+        right: 19px;
+        text-align: left;
+        top: -391px;
+    }
+    .doctorPhone-title h1{
+        font-size: 52px;
+        margin-right: 20px;
+        bottom: 0;
+    }
+    .doctorPhone-title span{
+        font-size: 62px;
+        font-family: "Zizou Slab-Bold_1";
+    }
+    .doctorPhone-title h2{
+        font-size: 52px;
+        top: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .doctorPhone-image{
+        position: absolute;
+        top: -158px;
+        left: 0;
+    }
+    .doctorPhone-image img{
+        width: 900px;
+    }
+    .doctorPhone-1{
+        position: absolute;
+        top: -283px;
+        right: 635px;
+    }
+    .doctorPhone-1 h1 {
+        font-family: "Arcon Regular";
+        font-size: 100px;
+        color: #5897FF;
+    }
+
+    .doctorPhone-1-content{
+        position: absolute;
+        top: -260px;
+        right: 163px;
+    }
+    .doctorPhone-1-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 20px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-1-content h3{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        font-size: 20px;
+    }
+    .doctorPhone-2 {
+        position: absolute;
+        top: -162px;
+        right: 446px;
+    }
+    .doctorPhone-2 br{
+        display: none;
+    }
+    .doctorPhone-2 h1 {
+        font-family: "Arcon Regular";
+        font-size: 100px;
+        color: #5897FF;
+    }
+    .doctorPhone-2-content{
+        position: absolute;
+        top: -135px;
+        right: 52px;
+    }
+    .doctorPhone-2-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 20px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-2-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .doctorPhone-3 {
+        position: absolute;
+        top: -45px;
+        right: 334px;
+    }
+    .doctorPhone-3 br{
+        display: none;
+    }
+    .doctorPhone-3 h1 {
+        font-family: "Arcon Regular";
+        font-size: 100px;
+        color: #5897FF;
+    }
+    .doctorPhone-3-content{
+        position: absolute;
+        top: -21px;
+        right: 106px;
+        width: 217px;
+    }
+    .doctorPhone-3-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 20px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-3-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .doctorPhone-4 {
+        position: absolute;
+        top: 77px;
+        right: 218px;
+    }
+    .doctorPhone-4 h1 {
+        font-family: "Arcon Regular";
+        font-size: 100px;
+        color: #5897FF;
+    }
+    .doctorPhone-4-content{
+        position: absolute;
+        top: 100px;
+        right: 42px;
+        width: 170px;
+    }
+    .doctorPhone-4-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 20px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-4-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    .doctorPhone-title{
+        position: absolute;
+        right: 19px;
+        text-align: left;
+        top: -391px;
+    }
+    .doctorPhone-title h1{
+        font-size: 44px;
+        margin-right: 20px;
+        bottom: 0;
+    }
+    .doctorPhone-title span{
+        font-size: 51px;
+        font-family: "Zizou Slab-Bold_1";
+    }
+    .doctorPhone-title h2{
+        font-size: 52px;
+        top: 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .doctorPhone-image{
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+    .doctorPhone-image img{
+        width: 640px;
+    }
+    .doctorPhone-1{
+        position: absolute;
+        top: -226px;
+        right: 458px;
+    }
+    .doctorPhone-1 h1 {
+        font-family: "Arcon Regular";
+        font-size: 70px;
+        color: #5897FF;
+    }
+
+    .doctorPhone-1-content{
+        position: absolute;
+        top: -211px;
+        right: 111px;
+    }
+    .doctorPhone-1-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 15px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-1-content h3{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        font-size: 15px;
+    }
+    .doctorPhone-2 {
+        position: absolute;
+        top: -126px;
+        right: 365px;
+    }
+    .doctorPhone-2 h1 {
+        font-family: "Arcon Regular";
+        font-size: 70px;
+        color: #5897FF;
+    }
+    .doctorPhone-2-content{
+        position: absolute;
+        top: -108px;
+        right: 64px;
+    }
+    .doctorPhone-2-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 15px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-2-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .doctorPhone-3 {
+        position: absolute;
+        top: -1px;
+        right: 283px;
+    }
+    .doctorPhone-3 h1 {
+        font-family: "Arcon Regular";
+        font-size: 70px;
+        color: #5897FF;
+    }
+    .doctorPhone-3-content{
+        position: absolute;
+        top: 22px;
+        right: 27px;
+    }
+    .doctorPhone-3-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 15px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-3-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .doctorPhone-4 {
+        position: absolute;
+        top: 79px;
+        right: 175px;
+    }
+    .doctorPhone-4 h1 {
+        font-family: "Arcon Regular";
+        font-size: 90px;
+        color: #5897FF;
+    }
+    .doctorPhone-4-content{
+        position: absolute;
+        top: 113px;
+        right: 31px;
+        width: 140px;
+    }
+    .doctorPhone-4-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 16px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-4-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .doctorPhone-title{
+        position: absolute;
+        right: 42px;
+        text-align: left;
+        top: -340px;
+    }
+    .doctorPhone-title h1{
+        font-size: 36px;
+        margin-right: 20px;
+        bottom: 0;
+    }
+    .doctorPhone-title span{
+        font-size: 36px;
+        font-family: "Zizou Slab-Bold_1";
+    }
+    .doctorPhone-title h2{
+        font-size: 52px;
+        top: 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .doctorPhone-image{
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+    .doctorPhone-image img{
+        width: 640px;
+    }
+    .doctorPhone-1{
+        position: absolute;
+        top: -226px;
+        right: 458px;
+    }
+    .doctorPhone-1 h1 {
+        font-family: "Arcon Regular";
+        font-size: 70px;
+        color: #5897FF;
+    }
+
+    .doctorPhone-1-content{
+        position: absolute;
+        top: -211px;
+        right: 111px;
+    }
+    .doctorPhone-1-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 15px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-1-content h3{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        font-size: 15px;
+    }
+    .doctorPhone-2 {
+        position: absolute;
+        top: -126px;
+        right: 365px;
+    }
+    .doctorPhone-2 h1 {
+        font-family: "Arcon Regular";
+        font-size: 70px;
+        color: #5897FF;
+    }
+    .doctorPhone-2-content{
+        position: absolute;
+        top: -108px;
+        right: 64px;
+    }
+    .doctorPhone-2-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 15px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-2-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .doctorPhone-3 {
+        position: absolute;
+        top: -1px;
+        right: 283px;
+    }
+    .doctorPhone-3 h1 {
+        font-family: "Arcon Regular";
+        font-size: 70px;
+        color: #5897FF;
+    }
+    .doctorPhone-3-content{
+        position: absolute;
+        top: 22px;
+        right: 27px;
+    }
+    .doctorPhone-3-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 15px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-3-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .doctorPhone-4 {
+        position: absolute;
+        top: 79px;
+        right: 175px;
+    }
+    .doctorPhone-4 h1 {
+        font-family: "Arcon Regular";
+        font-size: 90px;
+        color: #5897FF;
+    }
+    .doctorPhone-4-content{
+        position: absolute;
+        top: 113px;
+        right: 31px;
+        width: 140px;
+    }
+    .doctorPhone-4-content h2{
+        font-family: "Zizou Slab-Regular";
+        font-size: 16px;
+        color: #5897FF;
+        margin-bottom: 0px;
+    }
+    .doctorPhone-4-content h3, span{
+        font-family: "Zizou Slab-Regular";
+        color: #3e5a72;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .doctorPhone-title{
+        position: absolute;
+        right: 42px;
+        text-align: left;
+        top: -340px;
+    }
+    .doctorPhone-title h1{
+        font-size: 36px;
+        margin-right: 20px;
+        bottom: 0;
+    }
+    .doctorPhone-title span{
+        font-size: 36px;
+        font-family: "Zizou Slab-Bold_1";
+    }
+    .doctorPhone-title h2{
+        font-size: 52px;
+        top: 0;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .doctorPhone-image{
         position: absolute;
@@ -1120,7 +1851,6 @@ select {
     background-color: transparent;
     padding-left: 10px;
     padding-top: 5px;
-    margin-top: 10px;
     width: 150px;
     text-align: left;
     border: none;
@@ -1140,23 +1870,25 @@ select option{
 .text-area textarea{
     border: none;
     color: #08c7da;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     width: 200px;
     border-bottom: 1px solid #3e5a72;
+    font-weight: lighter;
 }
 textarea::placeholder{
     color: #08c7da;
-    font-size: 25px;
-    font-family: "Arcon Regular";
+    font-size: 18px;
+    font-weight: lighter;
 }
 .text-area2 textarea{
     border: none;
     color: #08c7da;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     width: 500px;
     border-bottom: 1px solid #3e5a72;
+    font-weight: lighter;
 }
 #icon-cell, #icon-cell2, #icon-dist{
     display: none;
@@ -1192,6 +1924,9 @@ textarea::placeholder{
     #section4{
         display: none;
     }
+}
+.menu-contact-1 div {
+    margin-top: 3px;
 }
 
 
