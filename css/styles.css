@@ -180,6 +180,17 @@ h1,h2,h3,h4{
         font-size: 25px;
         color: #FFFFFF;
     }
+    .div-network p{
+        font-size: 15px;
+    }
+    .nav.div-network ul li a{
+        line-height: 5px;
+    }
+
+    nav.mobile-slackie ul{
+        margin: 0
+    }
+
 }
 
 

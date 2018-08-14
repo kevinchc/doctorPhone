@@ -27,8 +27,7 @@ Created by Niels Klom
    Updated with new HTML5(.1) tags and new button 
    and link styles by Niels Klom. 20151215
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -286,7 +285,7 @@ nav.mobile-slackie {
     margin-bottom: 7px;
   }
   nav.mobile-slackie li {
-    margin: 0;
+    margin: 25px;
     background-color: transparent;
     height: auto;
   }
@@ -314,7 +313,6 @@ nav.mobile-slackie {
     nav.mobile-slackie ul li a {
       font-size: 20px !important;
       font-family: "Arcon Regular";
-      line-height: 50px;
       color: #fafafa;
       -webkit-animation: mobilein;
               animation: mobilein;
