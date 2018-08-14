@@ -223,15 +223,21 @@ h1,h2,h3,h4{
 .problem {
     position: relative;
 }
-.problem-left{
+.problem-left-web{
     position: absolute;
     left: 15px;
     top: -250px;
     z-index: 2;
 }
-.problem-left img{
+.problem-left-web img{
     width: 90%;
     height: auto;
+}
+.problem-left-mobil{
+    display: none;
+}
+.problem-left-mobil-top{
+    display: none;
 }
 .problem-right{
     text-align: right;
@@ -248,7 +254,10 @@ h1,h2,h3,h4{
     margin-top: 100px;
     color: white;
 }
-@media (min-width: 768px) and (max-width: 1264px){
+.problem-2-right-top, .problem-2-left-2{
+    display: none;
+}
+@media (min-width: 7025px) and (max-width: 1280px){
     .problem-left img{
         width: 75%;
     }
@@ -262,14 +271,21 @@ h1,h2,h3,h4{
     }
 }
 
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .problem-left{
-        top: 50px;
+@media (min-width: 481px) and (max-width: 767px){
+    .problem-left-web{
+        display: none;
+    }
+    .problem-left-mobil{
+        display: block;
+        position: relative;
+        top: 105px;
+    }
+    .problem-left-mobil img{
+        width: 100%;
     }
     .problem-right{
-        right: 50px;
-        top: -200px;
+        right: 31px;
+        top: -27px;
     }
     .problem-right h1{
         font-size: 30px;
@@ -277,6 +293,135 @@ h1,h2,h3,h4{
     .problem-right button {
         margin-top: 10px;
         height: auto;
+    }
+    .problem-left-mobil-top{
+        display: block;
+        position: absolute;
+        top: 49px;
+        left: 55px;
+    }
+    .problem-left-mobil-top img{
+        width: 64%;
+    }
+    .problem-2-right-top{
+        display: block;
+        position: absolute;
+        top: -183px;
+        left: 53px;
+        z-index: 1;
+    }
+    .problem-2-left{
+        display: none;
+    }
+    .problem-2-left-2{
+        display: block;
+        position: absolute;
+        left: 203px;
+        top: -98px;
+        z-index: 2;
+    }
+    .problem-2-right-top img{
+        width: 128px;
+    }
+    .problem-2-left-2 h1{
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        left: -45px;
+        top: -63px;
+    }
+    .problem-2-left-2 h2{
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        left: -51px;
+        top: -37px;
+    }
+    .problem-2-left-2 button{
+        height: auto;
+        margin-top: 18%;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .problem-left-web{
+        display: none;
+    }
+    .problem-left-mobil{
+        display: block;
+        position: relative;
+        top: 120px;
+    }
+    .problem-left-mobil img{
+        width: 90%;
+    }
+    .problem-right{
+        right: 31px;
+        top: -34px;
+    }
+    .problem-right h1{
+        font-size: 30px;
+        line-height: 0.8;
+    }
+    .problem-right button {
+        margin-top: 10px;
+        height: 39px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        vertical-align: center;
+    }
+    .problem-left-mobil-top{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 51px;
+    }
+    .problem-left-mobil-top img{
+        width: 70%;
+    }
+    .problem-2-right-top{
+        display: block;
+        position: absolute;
+        top: -183px;
+        left: 53px;
+        z-index: 1;
+    }
+    .problem-2-left{
+        display: none;
+    }
+    .problem-2-left-2{
+        display: block;
+        position: absolute;
+        left: 203px;
+        top: -98px;
+        z-index: 2;
+    }
+    .problem-2-right-top img{
+        width: 128px;
+    }
+    .problem-2-left-2 h1{
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        left: -45px;
+        top: -63px;
+    }
+    .problem-2-left-2 h2{
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        left: -51px;
+        top: -37px;
+    }
+    .problem-2-left-2 button{
+        margin-top: 10px;
+        height: 39px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        vertical-align: center;
     }
 }
 
@@ -309,7 +454,95 @@ h1,h2,h3,h4{
     width: 90%;
     height: auto;
 }
+@media (min-width: 7025px) and (max-width: 1280px){
+    .problem-left img{
+        width: 75%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .problem-2 {
+        position: relative;
+    }
+    .problem-2-left{
+        position: absolute;
+        text-align: center;
+        top: -100px;
+        padding-left: 100px;
+        z-index: 2;
+    }
+    .problem-2-left h1 {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .problem-2-left h2 {
+        font-size: 30px;
+        line-height: 1;
+    }
 
+    .problem-2-right{
+        text-align: right;
+        position: absolute;
+        right: 40px;
+        top: -260px;
+    }
+    .problem-2-right img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .problem-2-left{
+        display: none;
+    }
+    .problem-2-left-2{
+        display: block;
+        width: 249px;
+    }
+    .problem-2-left-2 h1{
+        font-size: 40px;
+        width: 400px;
+        position: absolute;
+        left: 150px;
+        top: -177px;
+    }
+    .problem-2-right-top{
+        top: -296px;
+        left: 93px;
+    }
+    .problem-2-right-top img{
+        width: 195px;
+    }
+    .problem-2-left-2 button{
+        margin-top: -10%;
+        margin-left: 80%;
+    }
+    .problem-2-left-2 h2 {
+        font-size: 50px;
+        top: -124px;
+        left: 142px;
+    }
+    .problem-right h1{
+        font-size: 40px;
+    }
+    .problem-2-right{
+        top: -50px;
+    }
+    .problem-2-right img{
+        width: 105%;
+        z-index: -1;
+    }
+    .problem-2-left h1{
+        font-size: 40px;
+    }
+    .problem-2-left h2{
+        font-size: 30px;
+    }
+    .problem-2-left button {
+        margin-top: 10px;
+        height: auto;
+    }
+}
 @media (min-width: 320px) and (max-width: 480px) {
     .problem-2-left{
         top: -200px;
@@ -477,6 +710,7 @@ h1,h2,h3,h4{
 .function-title h2 {
     font-size: 62px;
     line-height: 1;
+    font-family: "Zizou Slab-Bold_1";
 }
 .function p{
     font-family: "Zizou Slab-Regular";
@@ -607,91 +841,64 @@ h1,h2,h3,h4{
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-    /**function mobil*/
-    .carousel-item{
-        vertical-align: top;
+    .title-mobil, .subtitle-mobil{
+        text-align: center;
+        height: auto;
     }
-    .function1, .function{
-        display: none;
-    }
-    .function2{
-        display: block;
+    .function-mobil-bottom{
+        position: absolute;
+        top: 150px;
     }
     .icon-page{
         text-align: center;
     }
-    .function-mobil img {
-        width: 50%;
+    .icon-page{
+        width: 70px;
     }
-    .title-mobil, .subtitle-mobil{
-        text-align: center;
+    .function1, .function{
+        display: none;
     }
-    .function-mobil h1{
-        font-size: 36px;
-        font-family: "Zizou Slab-Bold_1";
-        font-weight: bold;
+    .function-mobil-image {
+        top: 106px;
+        right: -75px;
+        position: absolute;
+    }
+    .function-mobil-image img{
+        width: 60%;
+    }
+    .function-mobil-title{
+        position: absolute;
+        right: 314px;
+        top: 187px;
+    }
+    .function-mobil-title{
+        font-size: 40px;
+    }
+    .function2{
+        display: block;
+    }
+    .tales {
+        width: 100%;
+    }
+    .carousel-inner{
+        width:100%;
+        max-height: 600px !important;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .function-mobil h2{
         padding-top: 15px;
-        font-size: 20px;
+        font-size: 30px;
         font-family: "Arcon Regular";
         font-weight: bold;
     }
     .function-mobil h3{
-        font-size: 16px;
+        font-size: 28px;
         font-family: "Arcon Regular";
     }
-    .function-mobil span{
-        font-size: 40px;
-        font-family: "Zizou Slab-Bold_1";
-    }
-    .function-mobil-top{
-        position: relative;
-    }
-    .function-mobil-title{
-        position: absolute;
-        right: 227px;
-        top: 134px;
-    }
-    .function-mobil-image{
-        position: absolute;
-        width: 60%;
-        right: -140px;
-        top: 121px;
-    }
-    .icon-page img{
-        width: 61%;
-    }
-    i{
+    .fa-angle-left, .fa-angle-right{
         font-size: 50px;
-    }
-    .image-center{
-        margin-top: 10px;
-    }
-    .image-center1 img{
-        width: 59%;
-        height: 20%;
-        margin-top: 20px;
-    }
-    .image-center2 img{
-        width: 30%;
-        height: 30%;
-        margin-top: 20px;
-
-    }
-    .image-center3 img{
-        width: 30%;
-        height: 30%;
-        margin-top: 20px;
-
-    }
-    .image-center4 img{
-        width: 30%;
-        height: 30%;
-        margin-top: 20px;
-    }
-    .function-mobil-bottom{
-        margin-top: 25%;
+        color: #3e5a72;
     }
 
 }
@@ -712,9 +919,12 @@ h1,h2,h3,h4{
     }
     .function-mobil img {
         width: 50%;
+        padding-top: 4px;
+        margin-left: 17px;
     }
     .title-mobil, .subtitle-mobil{
         text-align: center;
+        height: auto;
     }
     .function-mobil h1{
         font-size: 30px;
@@ -723,7 +933,7 @@ h1,h2,h3,h4{
     }
     .function-mobil h2{
         padding-top: 15px;
-        font-size: 20px;
+        font-size: 17px;
         font-family: "Arcon Regular";
         font-weight: bold;
     }
@@ -741,13 +951,13 @@ h1,h2,h3,h4{
     .function-mobil-title{
         position: absolute;
         right: 130px;
-        top: 70px;
+        top: 90px;
     }
     .function-mobil-image{
         position: absolute;
         width: 60%;
-        right: -96px;
-        top: 49px;
+        right: -68px;
+        top: 75px;
     }
     .image-center{
         margin-top: 10px;
@@ -755,27 +965,48 @@ h1,h2,h3,h4{
     .image-center1 img{
         width: 40%;
         height: 20%;
-        margin-top: 20px;
+        margin-left: 0;
     }
     .image-center2 img{
-        width: 30%;
-        height: 30%;
-        margin-top: 20px;
+        width: 40%;
+        height: 20%;
+        margin-left: 10px;
 
     }
     .image-center3 img{
-        width: 30%;
-        height: 30%;
-        margin-top: 20px;
+        width: 40%;
+        height: 20%;
+        margin-left: 0;
 
     }
     .image-center4 img{
-        width: 30%;
-        height: 30%;
-        margin-top: 20px;
+        width: 40%;
+        height: 20%;
+        margin-left: 0;
+
     }
     .function-mobil-bottom{
-        margin-top: 50px;
+        position: absolute;
+        top: -94px;
+        height: 565px;
+    }
+    .carousel-inner{
+       position: absolute;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .carousel-item{
+        margin-left: -7px;
+    }
+    .col-height{
+        height: auto;
+    }
+    .fp-slides {
+        height: 102%;
+    }
+    .fa-angle-left, .fa-angle-right{
+        font-size: 35px;
+        color: #3e5a72;
     }
 
 }
@@ -797,6 +1028,9 @@ h1,h2,h3,h4{
     position: absolute;
     top: -185px;
     right: 1020px;
+}
+.problem-2-left button{
+    padding-top: 10px;
 }
 .doctorPhone-1 h1 {
     font-family: "Arcon Regular";
@@ -904,14 +1138,22 @@ h1,h2,h3,h4{
 }
 .doctorPhone-title{
     position: absolute;
-    right: 80px;
+    right: 99px;
     text-align: right;
     top: -250px;
 }
 .doctorPhone-title h1{
-    font-size: 46px;
+    font-size: 50px;
     margin-right: 20px;
     bottom: 0;
+    line-height: 1;
+}
+.doctorPhone-title span{
+    font-size: 62px;
+    margin-right: 20px;
+    bottom: 0;
+    line-height: 1;
+    font-family: "Zizou Slab-Bold_1";
 }
 .doctorPhone-title h2{
     font-size: 62px;
@@ -1643,14 +1885,15 @@ h1,h2,h3,h4{
     text-align: start;
 }
 .contact-info h1{
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Arcon Regular";
     color: #FFFFFF;
 }
 .contact-info h2{
-    font-size: 15px;
+    font-size: 19px;
     font-family: "Arcon Regular";
     color: #FFFFFF;
+    font-style: normal;
 }
 .menu-contact-1{
     text-align: left;
@@ -1743,6 +1986,9 @@ h5{
 .request-title{
     text-align: center;
 }
+.request-title h1{
+    font-size: 63px;
+}
 
 .input-form{
     border-bottom: 1px solid #3e5a72;
@@ -1767,6 +2013,7 @@ h5{
     color: #08c7da;
     font-size: 24px;
     font-weight: lighter;
+    font-family: "Arcon Regular";
 }
 .btn-send {
 	padding-top: 25px;
@@ -1784,7 +2031,9 @@ h5{
     color: #FFFFFF;
     font-family: "Arcon Regular";
 }
-
+.input-mobil{
+    display: none;
+}
 @media (min-width: 768px) and (max-width: 1024px){
     .main-bottom {
         display: none;
@@ -1806,10 +2055,11 @@ h5{
     }
 }
 @media (min-width: 200px) and (max-width: 480px) {
-    #name,#lastname,#country,#city,#address,#marca,#model,#problem,#dni,#phone,#email{
+    #name,#lastname,#country,#city,#names,#address,#marca,#model,#problem,#dni,#phone,#email{
         color: #08c7da;
         font-size: 17px;
         font-weight: lighter;
+        font-family: "Arcon Regular";
     }
     .request{
         padding-top: 15%
@@ -1837,7 +2087,7 @@ h5{
         padding-left: 0px;
     }
     .input-select{
-        margin-top: 0;
+        margin-top: 5px;
         padding-left: 0px;
     }
     .input-select img{
@@ -1869,6 +2119,9 @@ h5{
     .request select{
         width: 125px;
     }
+    .text-area textarea{
+        margin-top: 1px;
+    }
     .request textarea{
         font-family: "Arcon Regular";
         color: #00607c;
@@ -1884,7 +2137,13 @@ h5{
         padding-top: 10px;
     }
     .btn-send button{
+        margin-top: 10px;
+        height: 39px;
         width: 80px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        vertical-align: center;
     }
     .btn-send h3{
         font-size: 15px;
@@ -1892,6 +2151,16 @@ h5{
     textarea::placeholder{
         color: #08c7da;
         font-size: 10px;
+    }
+    .input-web{
+        display: none;
+    }
+    .input-mobil{
+        display: block;
+    }
+    .btn{
+        background-color: #08c7da;
+        vertical-align: middle;
     }
 }
 
@@ -1945,7 +2214,6 @@ textarea::placeholder{
 }
 .request input{
     border: none;
-    color: red;
 }
 
 
@@ -1955,8 +2223,8 @@ textarea::placeholder{
 /** Contact **/
 .contact-info{
     height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #08c7da;
 }
 .menu-contact div {
@@ -2012,9 +2280,32 @@ textarea::placeholder{
 
 #map {
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: grey;
 }
 br {
     margin: 0;
+}
+
+#fondo {
+    width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 990;opacity: 0.8;background:#000;
+}
+#flotante {
+    text-align: center;
+    z-index: 999;
+    border: 8px solid #fff;
+    margin-top: -222px;
+    margin-left: -153px;
+    top: 50%;
+    left: 50%;
+    padding: 12px;
+    position: fixed;
+    width: 300px; background-color: #fff; border-radius: 3px;
+}
+#flotante img {
+    width: 100%;
+    height: 100%;
+}
+a:hover{
+    text-decoration: none;
 }

@@ -149,13 +149,22 @@ function flotante2(tipo){
 
             },1000)
         }
+}
+$(document).ready(function(){
+    $('input[type="button"]').attr('disabled','disabled');
+    $('input[type="text"]').keypress(function(){
+        if($(this).val() != ''){
+            $('input[type="submit"]').removeAttr('disabled');
+        }
+    });
+});
+function onSubmit() {
+    var names;
+    if($("#name").val() != ''){
+        names = $("#name").val()+ " " + $("#lastname").val();;
+    }else {
+        names = $("#names").val();
     }
-
-
-function onSubmit(token ) {
-
-    var name = $("#name").val();
-    var lastname = $("#lastname").val();
     var country = $("#country").val();
     var city = $("#city").val();
     var address = $("#address").val();
@@ -173,11 +182,10 @@ function onSubmit(token ) {
     if (otherProblem != "N/A") {
         problem = otherProblem
     }
-    console.log(name+" "+ model)
+    console.log(names+" "+ model);
     $.post("http://190.233.143.103/api/requestService",
         {
-            name: name,
-            lastname: lastname,
+            names: names,
             province: country,
             district: city,
             address: address,
