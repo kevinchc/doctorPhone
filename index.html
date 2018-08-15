@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" href="images/preloader/icon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -15,8 +15,34 @@
     <link rel="stylesheet" type="text/css" href="plugins/slackie.css">
     <title>Dr. Phone</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(window).on('load', function () {
+        setTimeout(function () {
+            $(".loader-page").css({visibility:"hidden",opacity:"0"})
+        }, 2000);
+
+    });
+    </script>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 </head>
 <body>
+<div class="loader-page">
+    <div class="loader-icon">
+        <img src="images/newVersion/LOGO_RESPONSIVE.png">
+    </div>
+    <div class="loader-title">
+        <h1>DR PHONE</h1>
+    </div>
+    <div class="loader-giff">
+        <img src="images/newVersion/BEEP%20HEADER.gif">
+    </div>
+</div>
 <div class="container-fluid" id="header">
     <div class="row nav-web">
         <div class="col-md-1 col-sm-1 col-1 nav-web-logo">
@@ -36,7 +62,7 @@
                     <a href="#election">quién es dr phone</a>
                 </li>
                 <li>
-                    <a href="#request">solución</a>
+                    <a href="#request">Solicitud</a>
                 </li>
                 <li>
                     <a href="#contact">contacto</a>
@@ -48,8 +74,7 @@
         </div>
         <div class="btn-group nav-mobil col-1">
                 <a href="#mobile-nav" class="mobile-nav-trigger icon">
-                    <i class="fas fa-align-center">
-                    </i>
+                    <img src="images/preloader/menu.png">
                 </a>
             <nav role="navigation" id="mobile-nav" class="mobile-slackie">
                 <a href="#close" class="close-slackie-mobile">
@@ -59,12 +84,12 @@
                     <li><a href="#solution">INICIO</a></li>
                     <li><a href="#function">AVERÍGUALO</a></li>
                     <li><a href="#election">¿QUÍEN ES DR PHONE?</a></li>
-                    <li><a href="#request">SOLUCIÓN</a></li>
+                    <li><a href="#request">SOLICITUD</a></li>
                 </ul>
                 <div class="nav-border">
                 </div>
                 <div class="row div-network slackie-action-btn-2">
-                    <div class=" col-6">
+                    <div class="offset-1 col-6">
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/drphonePE" target="_blank">
@@ -82,7 +107,7 @@
                             </li>
                         </ul>
                     </div>
-                        <div class="col-6">
+                        <div class="col-5">
                         <ul>
                             <li>
                                 <a href="https://www.instagram.com/drphone.pe" target="_blank">
@@ -123,9 +148,11 @@
                             </div>
                             <div class="problem-right">
                                 <h1>¿Tienes<br>Problemas<br>con tu celular?</h1>
-                                <button class="btn">
-                                    <h5>Soluciónalo YA!</h5>
-                                </button>
+                                <a href="#request">
+                                    <button class="btn">
+                                        <h5>Soluciónalo YA!</h5>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -139,16 +166,20 @@
                                 <h1>TENEMOS</h1>
                                 <h1>LA</h1>
                                 <h2>SOLUCIÓN</h2>
-                                <button class="btn">
-                                    <h5>AVERIGUALO</h5>
-                                </button>
+                                <a href="#function">
+                                    <button class="btn">
+                                        <h5>AVERÍGUALO</h5>
+                                    </button>
+                                </a>
                             </div>
                             <div class="problem-2-left-2">
                                 <h1>TENEMOS LA</h1>
                                 <h2>SOLUCIÓN</h2>
-                                <button class="btn">
-                                    <h5>AVERIGUALO</h5>
-                                </button>
+                                <a href="#function">
+                                    <button class="btn">
+                                        <h5>AVERÍGUALO</h5>
+                                    </button>
+                                </a>
                             </div>
                             <div class="problem-2-right">
                                 <img src="images/newVersion/imagen_slide_2.png">
@@ -181,9 +212,13 @@
                                 <h5>VER DETALLES</h5>
                             </button>
                             <div class="left-top-button-mas" id="div-2">
-                                <h2>Nuestros agentes<br>motorizados se
-                                    encargarán<br>de recoger y<br>entregar
-                                    el equipo<br>en el lugar que te encuentres.</h2>
+                                <h2>Nuestros agentes<br>
+                                    motorizados se<br>
+                                    encargarán de<br>
+                                    recoger y entregar<br>
+                                    el equipo en el lugar<br>
+                                    que te encuentres.
+                                </h2>
                             </div>
                         </div>
                     </div>
@@ -701,7 +736,7 @@
         <div class="container-fluid">
             <div class="container-fluid">
                 <div class="row contact-map">
-                    <div id="map"></div>
+                    <img src="images/preloader/Mask%20Group%2014.png">
                 </div>
                 <div class="row contact-info">
                     <div class="col-md-3">
@@ -811,7 +846,7 @@
                                         <h2>TELÉFONO:</h2>
                                     </div>
                                     <div class="col-md-12" style="padding-left: 30px">
-                                        <h2>942-485-407</h2>
+                                        <h2>(51) 999 988 424</h2>
                                     </div>
                                 </div>
                             </div>
@@ -840,21 +875,21 @@
                                     <div class="col-md-2">
                                     </div>
                                     <div class="col-md-10">
-                                        <h2>Inglés</h2>
+                                        <h2></h2>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-md-2">
                                     </div>
                                     <div class="col-md-10">
-                                        <h2>Francés</h2>
+                                        <h2></h2>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-md-2">
                                     </div>
                                     <div class="col-md-10">
-                                        <h2>Portugués</h2>
+                                        <h2></h2>
                                     </div>
                                 </div>
                             </div>
@@ -876,22 +911,32 @@
         <h3>(+51) 999 988 424</h3>
     </div>
     <div id="fondo"></div>
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="1188766631266484"
+         theme_color="#0084ff"
+         logged_in_greeting=" ¡Hola! como podemos ayudarte?"
+         logged_out_greeting=" ¡Hola! como podemos ayudarte?">
+    </div>
 </div>
-<script>
-    // Initialize and add the map
-    function initMap() {
-        // The location of Uluru
-        var uluru = {lat: -12.0792165, lng: -76.98818499999999};
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 16, center: uluru});
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
-    }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH1AjRdq8SSC3xj43r91zswRrAs4o4Cn4&callback=initMap">
-</script>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2014688695271676"
+     theme_color="#08C7DA"
+     logged_in_greeting="Hola, somos Dr Phone, ¿en que podemos ayudarte?"
+     logged_out_greeting="Hola, somos Dr Phone, ¿en que podemos ayudarte?">
+</div>
+
 <script type="text/javascript" src="plugins/fullpage.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
@@ -901,9 +946,6 @@
         slidesNavigation: true,
     });
 </script>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -927,7 +969,6 @@
             },1000)
         }
     }
-
     function txtkeypress() {
         var val1 = document.getElementById("email").value;
         var val2 = document.getElementById("dni").value;
@@ -943,3 +984,6 @@
 </script>
 </body>
 </html>
+
+
+

@@ -86,6 +86,10 @@ h1,h2,h3,h4{
 .nav-web-navigator {
     padding-top: 30px;
 }
+.nav-web-navigator img{
+    position: relative;
+    top: 4px;
+}
 .nav-web-navigator li{
     display: inline;
     padding-right: 50px;
@@ -579,8 +583,8 @@ h1,h2,h3,h4{
 }
 .function-left-top{
     position: absolute;
-    left: 450px;
-    top: -80px;
+    left: 354px;
+    top: -100px;
 }
 .left-top-1{
     position: absolute;
@@ -590,7 +594,7 @@ h1,h2,h3,h4{
 
 .function-left-bottom{
     position: absolute;
-    left: 400px;
+    left: 336px;
     top: 120px;
 }
 .left-top-2{
@@ -601,13 +605,13 @@ h1,h2,h3,h4{
 
 .function-image-center{
     position: absolute;
-    top: -200px;
+    top: -220px;
     z-index: -1;
 }
 .function-right-top{
     position: absolute;
-    right: 560px;
-    top: -150px;
+    right: 481px;
+    top: -161px;
 }
 .left-top-3{
     position: absolute;
@@ -617,8 +621,8 @@ h1,h2,h3,h4{
 
 .function-right-bottom{
     position: absolute;
-    right: 630px;
-    top: 160px;
+    right: 547px;
+    top: 147px;
 }
 .left-top-4{
     position: absolute;
@@ -635,7 +639,7 @@ h1,h2,h3,h4{
 }
 .function h5{
     font-family: "Arcon Regular";
-    font-size: 10px;
+    font-size: 13px;
     color: #3e5a72;
 }
 .left-top-button{
@@ -650,14 +654,14 @@ h1,h2,h3,h4{
     width: 400px;
 }
 .function h2{
-    font-size: 13px;
+    font-size: 16px;
     font-family: "Arcon Regular";
 }
 
 .left-bottom-button{
     position: absolute;
     top: 35px;
-    right: -70px;
+    right: -91px;
 }
 .right-top-button{
     position: absolute;
@@ -700,8 +704,8 @@ h1,h2,h3,h4{
 .function-title{
     text-align: right;
     position: absolute;
-    top: -200px;
-    right: 150px;
+    top: -250px;
+    right: 110px;
 }
 .function-title h1 {
     font-size: 46px;
@@ -933,13 +937,13 @@ h1,h2,h3,h4{
         line-height: 0.8;
     }
     .function-mobil h2{
-        padding-top: 15px;
-        font-size: 17px;
+        padding-top: 5px;
+        font-size: 15px;
         font-family: "Arcon Regular";
         font-weight: bold;
     }
     .function-mobil h3{
-        font-size: 15px;
+        font-size: 12px;
         font-family: "Arcon Regular";
     }
     .function-mobil span{
@@ -1866,7 +1870,7 @@ h1,h2,h3,h4{
         font-size: 30px;
         margin-right: 20px;
         bottom: 0;
-        line-height: 0.4;
+        line-height: 0.2;
     }
     .doctorPhone-title span{
         font-size: 30px;
@@ -2008,8 +2012,7 @@ h5{
     font-weight: lighter;
 }
 .problem-phone{
-	padding-left: 0px;
-	margin-left: 0px;
+	margin-left: -84px;
 }
 #name,#lastname,#country,#city,#address,#marca,#model,#problem,#dni,#phone,#email{
     color: #08c7da;
@@ -2063,6 +2066,9 @@ h5{
         font-size: 17px;
         font-weight: lighter;
         font-family: "Arcon Regular";
+    }
+    .problem-phone{
+        margin-left: 0px;
     }
     .request{
         padding-top: 15%
@@ -2264,18 +2270,27 @@ textarea::placeholder{
     font-size: 25px;
 }
 .btn-details{
-    width: 92px;
-    height: 27px;
+    width: 113px;
+    height: 29px;
     border-radius: 20px 20px 20px 20px;
     -moz-border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
     border: 1px solid #3e5a72;
     background-color: transparent;
-    padding-top: 7px;
     cursor: pointer;
 }
 .contact-map{
-    padding-top: 90px;
+    position: relative;
+    display: flex;
+    padding-top: 60px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-map img{
+    text-align: center;
+    width: 100%;
 }
 
 #map {
@@ -2308,4 +2323,87 @@ br {
 }
 a:hover{
     text-decoration: none;
+}
+
+/** preloader **/
+.loader-page {
+    position: fixed;
+    z-index: 25000;
+    background: #08c7da;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .3s ease;
+}
+.loader-page h1 {
+    font-family: "Zizou Slab-Bold_1";
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.loader-icon{
+     position: absolute;
+     z-index: 2;
+     top: 185px;
+     text-align: center;
+ }
+.loader-icon img{
+    width: 50%;
+}
+.loader-title{
+    position: absolute;
+    top: 258px;
+    z-index: 2;
+}
+.loader-giff{
+    position: absolute;
+    top: 332px;
+    z-index: 2;
+}
+.loader-giff img{
+    width: 100%;
+}
+.loader-page::before {
+    content: "";
+    position: absolute;
+    border: 2px solid transparent;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid rgba(50, 150, 176,0);
+    border-top: 2px solid rgba(50, 150, 176,0);
+    animation: rotarload 1s linear infinite;
+    transform: rotate(0deg);
+}
+@keyframes rotarload {
+    0%   {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+.loader-page::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #08c7da;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid rgba(50, 150, 176, 0);
+    border-top: 2px solid rgba(50, 150, 176, 0);
+    animation: rotarload 1s ease-out infinite;
+    transform: rotate(0deg);
+}
+
+#fb-root > div.fb_dialog.fb_dialog_advanced.fb_shrink_active {
+    right: initial !important;
+    left: 18pt;
+    z-index: 9999999 !important;
+}
+.fb-customerchat.fb_invisible_flow.fb_iframe_widget iframe {
+    right: initial !important;
+    left: 18pt !important;
+    z-index: 2;
 }
