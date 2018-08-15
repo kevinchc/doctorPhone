@@ -70,11 +70,9 @@ $('#country').on('change',function () {
             $('#city').append("<option values='"+element+"'>"+element+"</option>")
         });
         $('#city').show(300);
-        $("#icon-dist").show(300);
     }else {
         $("#city").empty();
         $("#city").hide(300);
-        $("#icon-dist").hide();
     }
 })
 
@@ -87,19 +85,15 @@ $('#marca').on('change', function() {
      marcas[""+ valor+""].forEach(function (element) {
          $('#model').append("<option values='"+element+"'>"+element+"</option>")
      });
-     $("#icon-cell").show(300);
      $('#model').show(300);
      $(".ocultar").show(300);
      $('#problem').show(300);
-     $("#icon-cell2").show(300);
   }else {
       $("#model").empty();
       $("#model").hide(300);
       $("#problem").hide(300);
       $("#otherProblem").hide();
       $("#otherModels").hide(300);
-      $("#icon-cell").hide();
-      $("#icon-cell2").hide();
   }
 });
 

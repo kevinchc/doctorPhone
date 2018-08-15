@@ -48,7 +48,7 @@
         </div>
         <div class="btn-group nav-mobil col-1">
                 <a href="#mobile-nav" class="mobile-nav-trigger icon">
-                    <i class="fas fa-align-justify">
+                    <i class="fas fa-align-center">
                     </i>
                 </a>
             <nav role="navigation" id="mobile-nav" class="mobile-slackie">
@@ -516,7 +516,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="offset-md-1 col-md-4 offset-sm-1 col-sm-10 offset-1 col-10">
+                                <div class="offset-md-1 col-md-4 offset-sm-1 col-sm-10 offset-2 col-9">
                                     <div class="row">
                                         <div class="col-md-5 col-sm-5 col-5 input-select">
                                             <div class="row">
@@ -537,7 +537,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="offset-md-2 col-md-5 offset-sm-2 col-sm-5 offset-1 col-5 input-select">
+                                        <div class="offset-md-1 col-md-5 offset-sm-1 col-sm-5 offset-1 col-5 input-select">
                                             <div class="row">
                                                 <img src="images/icono_map.png" id="icon-dist">
                                                 <div class="col-md-8 col-8 city">
@@ -561,7 +561,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="offset-md-1 col-md-4 offset-sm-1 col-sm-10 offset-1 col-10">
+                                <div class="offset-md-1 col-md-4 offset-sm-1 col-sm-10 offset-2 col-9">
                                     <div class="row">
                                         <div class="col-md-5 col-sm-5 col-5 input-select">
                                             <div class="row">
@@ -590,7 +590,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="offset-md-2 col-md-5 offset-sm-2 col-sm-5 offset-1 col-5 input-select">
+                                        <div class="offset-md-1 col-md-5 offset-sm-1 col-sm-5 offset-1 col-5 input-select">
                                             <div class="row">
                                                 <img src="images/icono_celu.png" id="icon-cell">
                                                 <div class="col-md-8 col-8 city">
@@ -614,7 +614,7 @@
                                 <div class="offset-md-2 col-md-4 offset-sm-1 col-sm-10 offset-2 col-8 input-form-problem">
                                     <div class="row">
                                         <img src="images/icono_celu2.png" id="icon-cell2">
-                                        <div class="col-md-6 col-9">
+                                        <div class="col-md-6 offset-2 col-9">
                                             <div class="problem-phone">
                                                 <select id="problem"
                                                         required>
@@ -636,7 +636,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-10 col-1 col-12 text-area2">
+                                        <div class="col-md-10 offset-2 col-9 text-area2">
                                                 <textarea id="otherProblem"
                                                           rows="1"
                                                           name="otherProblem"
@@ -650,8 +650,8 @@
                                 <div class="offset-md-1 col-md-4 offset-sm-1 col-sm-10 offset-1 col-4 input-form" style="margin-top: 5px">
                                     <div class="row">
                                         <img src="images/icono_dni.png">
-                                        <div class="col-md-10 col-sm-8">
-                                            <input type="text" class="form-control"
+                                        <div class="col-md-10 col-sm-8 col-8">
+                                            <input type="text" class="form-control" onkeypress="txtkeypress()"
                                                    id="dni" placeholder="Dni*"
                                                    style="border: none" required>
                                         </div>
@@ -660,8 +660,8 @@
                                 <div class="offset-md-2 col-md-4 offset-sm-1 col-sm-10 offset-2 col-4 input-form">
                                     <div class="row">
                                         <img src="images/icono_contacto.png">
-                                        <div class="col-md-10 col-sm-8">
-                                            <input type="text" class="form-control"
+                                        <div class="col-md-10 col-sm-8 col-8">
+                                            <input type="text" class="form-control" onkeypress="txtkeypress()"
                                                    id="phone" placeholder="Teléfono*">
                                         </div>
                                     </div>
@@ -671,8 +671,8 @@
                                 <div class="offset-md-1 col-md-4 offset-sm-1 col-sm-10 offset-1 col-10 input-form">
                                     <div class="row">
                                         <img src="images/icono_correo.png">
-                                        <div class="col-md-10 col-sm-8">
-                                            <input type="email" class="form-control"
+                                        <div class="col-md-10 col-sm-8 col-8">
+                                            <input type="email" class="form-control" onkeypress="txtkeypress()"
                                                    id="email" placeholder="Correo Electrónico*"
                                                    style="border: none" required>
                                         </div>
@@ -680,6 +680,8 @@
                                 </div>
                                 <div class="offset-md-2 col-md-4 col-sm-12 btn-send">
                                     <button type="button"
+                                            id="btnSend"
+                                            disabled
                                             class="g-recaptcha btn"
                                             data-sitekey="6LdWvGcUAAAAANg2r_ihmnwUCnKFVyZFSFwSHtVG"
                                             data-callback="onSubmit"
@@ -879,16 +881,16 @@
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        var uluru = {lat: -12.0792165, lng: -76.9903737};
+        var uluru = {lat: -12.0792165, lng: -76.98818499999999};
         // The map, centered at Uluru
         var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 4, center: uluru});
+            document.getElementById('map'), {zoom: 16, center: uluru});
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
     }
 </script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf7VxFEztrKPkC7yDoAYqUZLUlXvCfwR0&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH1AjRdq8SSC3xj43r91zswRrAs4o4Cn4&callback=initMap">
 </script>
 <script type="text/javascript" src="plugins/fullpage.js"></script>
 <script type="text/javascript">
@@ -929,6 +931,19 @@
                 $('#contenedor').hide();
 
             },1000)
+        }
+    }
+
+    function txtkeypress() {
+        var val1 = document.getElementById("email").value;
+        var val2 = document.getElementById("dni").value;
+        var val3 = document.getElementById("phone").value;
+        var boton =document.getElementById("btnSend");
+        
+        if (val1 == "" || val2 == "" || val3 == ""){
+            boton.setAttribute("disabled","disabled");
+        }else {
+            boton.removeAttribute("disabled")
         }
     }
 </script>

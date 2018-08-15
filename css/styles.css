@@ -161,8 +161,8 @@ h1,h2,h3,h4{
     }
     .nav-web-logo{
         padding-left: 50px;
-        padding-top: 20px;
-        padding-bottom: 13px;
+        padding-top: 9px;
+        padding-bottom: 8px;
     }
     .nav-web-logo img{
         width: 18px;
@@ -174,7 +174,7 @@ h1,h2,h3,h4{
         display: block;
         position: absolute;
         right: 38px;
-        top: 20px;
+        top: 14px;
     }
     .nav-mobil i{
         font-size: 25px;
@@ -362,7 +362,7 @@ h1,h2,h3,h4{
     }
     .problem-right h1{
         font-size: 30px;
-        line-height: 0.8;
+        line-height: 1;
     }
     .problem-right button {
         margin-top: 10px;
@@ -930,6 +930,7 @@ h1,h2,h3,h4{
         font-size: 30px;
         font-family: "Zizou Slab-Bold_1";
         font-weight: bold;
+        line-height: 0.8;
     }
     .function-mobil h2{
         padding-top: 15px;
@@ -950,8 +951,8 @@ h1,h2,h3,h4{
     }
     .function-mobil-title{
         position: absolute;
-        right: 130px;
-        top: 90px;
+        right: 142px;
+        top: 109px;
     }
     .function-mobil-image{
         position: absolute;
@@ -987,8 +988,8 @@ h1,h2,h3,h4{
     }
     .function-mobil-bottom{
         position: absolute;
-        top: -94px;
-        height: 565px;
+        top: -100px;
+        height: 580px;
     }
     .carousel-inner{
        position: absolute;
@@ -1310,11 +1311,11 @@ h1,h2,h3,h4{
 @media (min-width: 768px) and (max-width: 1024px){
     .doctorPhone-image{
         position: absolute;
-        top: -158px;
+        top: -98px;
         left: 0;
     }
     .doctorPhone-image img{
-        width: 900px;
+        width: 703px;
     }
     .doctorPhone-1{
         position: absolute;
@@ -1857,17 +1858,18 @@ h1,h2,h3,h4{
     }
     .doctorPhone-title{
         position: absolute;
-        right: 80px;
+        right: 14px;
         text-align: left;
-        top: -187px;
+        top: -170px;
     }
     .doctorPhone-title h1{
-        font-size: 36px;
+        font-size: 30px;
         margin-right: 20px;
         bottom: 0;
+        line-height: 0.4;
     }
     .doctorPhone-title span{
-        font-size: 36px;
+        font-size: 30px;
         font-family: "Zizou Slab-Bold_1";
     }
     .doctorPhone-title h2{
@@ -2016,7 +2018,6 @@ h5{
     font-family: "Arcon Regular";
 }
 .btn-send {
-	padding-top: 25px;
 }
 .btn-send h3{
 }
@@ -2026,6 +2027,8 @@ h5{
 .request button{
 	width: 200px;
     color: #FFFFFF;
+    margin-top: 10px;
+    height: auto;
 }
 .request h3{
     color: #FFFFFF;
@@ -2079,15 +2082,13 @@ h5{
         height: auto;
     }
     .request img{
-        display: none;
     }
     .input-form{
-        padding-top: 0px;
         padding-right: 0px;
         padding-left: 0px;
     }
     .input-select{
-        margin-top: 5px;
+        margin-top: 14px;
         padding-left: 0px;
     }
     .input-select img{
@@ -2098,7 +2099,7 @@ h5{
         padding-left: 0px;
     }
     #otherModels{
-        width: 160px;
+        width: 130px;
         font-size: 15px;
     }
     #otherModels::placeholder{
@@ -2152,7 +2153,7 @@ h5{
         color: #08c7da;
         font-size: 10px;
     }
-    .input-web{
+    .input-web, #icon-cell, #icon-cell2, #icon-dist{
         display: none;
     }
     .input-mobil{
@@ -2170,7 +2171,7 @@ select {
     background-color: transparent;
     padding-left: 10px;
     padding-top: 5px;
-    width: 150px;
+    width: 140px;
     text-align: left;
     border: none;
 }
@@ -2191,7 +2192,7 @@ select option{
     color: #08c7da;
     font-size: 20px;
     margin-top: 20px;
-    width: 200px;
+    width: 189px;
     border-bottom: 1px solid #3e5a72;
     font-weight: lighter;
 }
@@ -2205,12 +2206,11 @@ textarea::placeholder{
     color: #08c7da;
     font-size: 20px;
     margin-top: 20px;
-    width: 500px;
+    width: 397px;
     border-bottom: 1px solid #3e5a72;
     font-weight: lighter;
 }
 #icon-cell, #icon-cell2, #icon-dist{
-    display: none;
 }
 .request input{
     border: none;
