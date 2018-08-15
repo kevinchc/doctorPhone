@@ -348,7 +348,26 @@ nav.mobile-slackie {
       vertical-align: baseline; }
     @media (max-height: 380px) {
       nav.mobile-slackie .slackie-action-btn {
-        display: none; } }
+        display: none; }
+    }
+nav.mobile-slackie .slackie-action-btn-2 {
+  position: absolute;
+  height: 40px;
+  bottom: 154px;
+  left: 0;
+  text-align: center;
+  background: #0d9eac;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Arcon Regular";
+  line-height: 5px;
+  letter-spacing: 0; }
+nav.mobile-slackie .slackie-action-btn i {
+  vertical-align: baseline; }
+@media (max-height: 380px) {
+  nav.mobile-slackie .slackie-action-btn {
+    display: none; }
+}
 
 .mobile-slackie:target {
   display: block; }

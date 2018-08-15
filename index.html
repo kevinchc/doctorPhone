@@ -63,7 +63,7 @@
                 </ul>
                 <div class="nav-border">
                 </div>
-                <div class="row div-network">
+                <div class="row div-network slackie-action-btn-2">
                     <div class=" col-6">
                         <ul>
                             <li>
@@ -76,8 +76,8 @@
                                     <p>WHATSAPP</p>
                                 </a>
                             </li>
-                            <li><a href="##">
-                                    <p>CALL CENTER</p>
+                            <li><a onclick="flotante(1)">
+                                    <p>CALL</p>
                                 </a>
                             </li>
                         </ul>
@@ -919,14 +919,8 @@
     function flotante(tipo){
         if (tipo==1){
             $('#contenedor').show();
-            $('#flotante').animate({
-                marginTop: "-152px"
-            });
         }
         if (tipo==2){
-            $('#flotante').animate({
-                marginTop: "-756px"
-            });
             setTimeout(function(){
                 $('#contenedor').hide();
 
