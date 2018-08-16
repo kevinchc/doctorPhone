@@ -110,11 +110,17 @@ h1,h2,h3,h4{
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .nav-web-logo{
+        padding-left: 79px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     .nav-web-navigator {
         display: inline-block;
         position: absolute;
-        right: 0;
+        right: -190px;
+        padding-top: 22px;
     }
     .nav-web-navigator li{
         display: inline-block;
@@ -261,9 +267,23 @@ h1,h2,h3,h4{
 .problem-2-right-top, .problem-2-left-2{
     display: none;
 }
-@media (min-width: 7025px) and (max-width: 1280px){
+@media (min-width: 1025px) and (max-width: 1400px){
     .problem-left img{
         width: 75%;
+    }
+    .problem-left-web img{
+        width: 80%;
+    }
+    .problem-2-right img{
+        width: 80%;
+    }
+    .problem-left-web{
+        left: 15px;
+        top: -231px;
+    }
+    .problem-2-right{
+        right: 40px;
+        top: -242px;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px){
@@ -458,7 +478,7 @@ h1,h2,h3,h4{
     width: 90%;
     height: auto;
 }
-@media (min-width: 7025px) and (max-width: 1280px){
+@media (min-width: 1025px) and (max-width: 1280px){
     .problem-left img{
         width: 75%;
     }
@@ -723,6 +743,28 @@ h1,h2,h3,h4{
     line-height: 1;
     margin-top: 5px;
 }
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .function-title{
+        top: -287px;
+        right: 70px;
+    }
+    .function-image-center{
+        top: -296px;
+    }
+    .function-left-top{
+        top: -187px;
+    }
+    .function-left-bottom{
+        top: 43px;
+    }
+    .function-right-bottom{
+        top: 57px;
+    }
+    .function-right-top{
+        top: -236px;
+    }
+}
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .function-title{
@@ -1164,6 +1206,41 @@ h1,h2,h3,h4{
     font-size: 62px;
     top: 0;
 }
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .doctorPhone-image img{
+        width: 94%;
+    }
+    .doctorPhone-1{
+        top: -185px;
+        right: 997px;
+    }
+    .doctorPhone-1-content{
+        top: -160px;
+        right: 367px;
+    }
+    .doctorPhone-2{
+        right: 831px;
+    }
+    .doctorPhone-2-content{
+        right: 288px;
+    }
+    .doctorPhone-3{
+        right: 693px;
+    }
+    .doctorPhone-3-content{
+        right: 228px;
+    }
+    .doctorPhone-4{
+        right: 540px;
+    }
+    .doctorPhone-4-content{
+        right: 110px;
+    }
+    .contact-map{
+        height: 379px;
+    }
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
     .doctorPhone-image{
         position: absolute;
@@ -2040,6 +2117,7 @@ h5{
 .input-mobil{
     display: none;
 }
+
 @media (min-width: 768px) and (max-width: 1024px){
     .main-bottom {
         display: none;
