@@ -352,6 +352,7 @@
                                             </h3>
                                         </div>
                                     </div>
+                                    <!--
                                     <div class="carousel-item">
                                         <div class="row justify-content-center" style="margin-left: -30px">
                                             <div class="col-1">
@@ -451,6 +452,7 @@
                                             </h3>
                                         </div>
                                     </div>
+                                    -->
                                 </div>
                             </div>
                         </div>
@@ -498,8 +500,7 @@
                     </div>
                     <div class="doctorPhone-4-content">
                         <h2>AHORRA TIEMPO,</h2>
-                        <h3>Con nuestra flota de motorizados</h3>
-                        <h3>ya no tendrás que ir a ningún lugar.</h3>
+                        <h3>Con nuestra flota de motorizados<br>ya no tendrás que ir a ningún lugar.</h3>
                     </div>
                     <div class="doctorPhone-title">
                         <h1>POR QUÉ ELEGIR</h1>
@@ -939,12 +940,34 @@
 
 <script type="text/javascript" src="plugins/fullpage.js"></script>
 <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['solution', 'function','election', 'request', 'contact'],
-        sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
-        css3: true,
-        slidesNavigation: true,
-    });
+    $(document).ready(function () {
+        var ventana_ancho = $(window).width();
+        var ventana_alto = $(window).height();
+        if(ventana_ancho < 1025){
+            console.log(ventana_ancho)
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['solution', 'function','election', 'request','solution'],
+                sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent'],
+                css3: true,
+                slidesNavigation: true,
+                onLeave: function(origin, destination, direction){
+                    //prevenimos el desplazamiento si la sección de destino es la tercera de la página
+                    if(destination.index == 4){
+                        return false;
+                    }
+                }
+            });
+        }else{
+            console.log(ventana_ancho)
+            var myFullpage = new fullpage('#fullpage', {
+                anchors: ['solution', 'function','election', 'request', 'contact'],
+                sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
+                css3: true,
+                slidesNavigation: true,
+            });
+
+        }
+    })
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

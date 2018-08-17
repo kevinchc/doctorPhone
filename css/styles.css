@@ -1049,7 +1049,7 @@ h1,h2,h3,h4{
         height: auto;
     }
     .fp-slides {
-        height: 102%;
+        height: 120%;
     }
     .fa-angle-left, .fa-angle-right{
         font-size: 35px;
@@ -1514,7 +1514,7 @@ h1,h2,h3,h4{
         font-family: "Zizou Slab-Regular";
         color: #3e5a72;
         margin-bottom: 0px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .doctorPhone-title{
         position: absolute;
@@ -1795,6 +1795,7 @@ h1,h2,h3,h4{
         color: #3e5a72;
         margin-bottom: 0px;
         font-size: 16px;
+        line-height: 1.1;
     }
     .doctorPhone-title{
         position: absolute;
@@ -1936,6 +1937,7 @@ h1,h2,h3,h4{
         color: #3e5a72;
         margin-bottom: 0px;
         font-size: 10px;
+        line-height: 1.1;
     }
     .doctorPhone-title{
         position: absolute;
