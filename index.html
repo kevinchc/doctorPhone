@@ -352,6 +352,7 @@
                                             </h3>
                                         </div>
                                     </div>
+                                    <!--
                                     <div class="carousel-item">
                                         <div class="row justify-content-center" style="margin-left: -30px">
                                             <div class="col-1">
@@ -451,6 +452,7 @@
                                             </h3>
                                         </div>
                                     </div>
+                                   -->
                                 </div>
                             </div>
                         </div>
@@ -910,13 +912,6 @@
         <h3>(+51) 999 988 424</h3>
     </div>
     <div id="fondo"></div>
-    <div class="fb-customerchat"
-         attribution=setup_tool
-         page_id="1188766631266484"
-         theme_color="#0084ff"
-         logged_in_greeting=" ¡Hola! como podemos ayudarte?"
-         logged_out_greeting=" ¡Hola! como podemos ayudarte?">
-    </div>
 </div>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -941,8 +936,8 @@
     $(document).ready(function () {
         var ventana_ancho = $(window).width();
         var ventana_alto = $(window).height();
+        console.log(ventana_ancho + "  " + ventana_alto)
         if(ventana_ancho < 1025){
-            console.log(ventana_ancho)
             var myFullpage = new fullpage('#fullpage', {
                 anchors: ['solution', 'function','election', 'request','solution'],
                 sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent'],
@@ -987,7 +982,7 @@
             setTimeout(function(){
                 $('#contenedor').hide();
 
-            },1000)
+            },100)
         }
     }
     function txtkeypress() {
